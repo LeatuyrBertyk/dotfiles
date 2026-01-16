@@ -1,0 +1,25 @@
+{
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange",
+    "workbench.editorAssociations": {
+        "*.exe": "default"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font',monospace",
+    "editor.fontLigatures": true,
+
+    "editor.formatOnSave": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.formatOnType": true,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "workbench.colorTheme": "Pace Dark",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
+}
