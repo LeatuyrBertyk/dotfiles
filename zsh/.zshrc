@@ -28,7 +28,7 @@ alias y="yazi"
 
 # Eza (Better ls)
 alias ls="eza --icons=always"
-alias tree="eza --tree --ioncs"
+alias tree="eza --tree --icons"
 alias treefull="eza --tree --icons --long"
 
 # Zoxide (Better cd)
