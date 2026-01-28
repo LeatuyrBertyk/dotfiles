@@ -19,7 +19,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR="nvim"
-alias build="g++ main.cpp -g -o run.exe"
+alias build="time g++ main.cpp -g -o run.exe"
 alias run="./run.exe"
 alias cmbuild='mkdir -p build && cd build && cmake .. && cmake --build . && cd ..'
 alias cmrun='build/bin/app'
