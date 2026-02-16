@@ -1,0 +1,22 @@
+let g:plug_home = '~/vimfiles/plugged'
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'preservim/nerdTree'
+Plug 'unkiwii/vim-nerdtree-sync'
+Plug 'jcharum/vim-nerdtree-syntax-highlight',
+      \ {'branch': 'escape-keys'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim' {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
+Plug 'tmhedberg/SimpyFold'
+
+call plug#end()
+
+syntax on
+colorscheme tokyonight
