@@ -6,3 +6,4 @@ vim.cmd("command -nargs=1 VV rightbelow vsplit <args>")
 vim.cmd("command -nargs=1 SS rightbelow split <args>")
 vim.cmd('command Vterm execute "rightbelow vnew" | terminal')
 vim.cmd('command Sterm execute "botright split" | terminal')
+vim.opt.clipboard = "unnamedplus"
