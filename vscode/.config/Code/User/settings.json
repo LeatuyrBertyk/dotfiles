@@ -4,7 +4,6 @@
   "workbench.editorAssociations": {
     "*.exe": "default",
   },
-  "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "'JetBrainsMono Nerd Font',monospace",
   "editor.fontLigatures": true,
   "[cpp]": {
@@ -21,7 +20,37 @@
   },
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
-  "editor.fontSize": 13,
   "editor.codeActionsOnSave": {},
   "window.zoomLevel": 0.6,
+  "editor.fontSize": 14,
+  "workbench.activityBar.location": "top",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash",
+    },
+    "zsh": {
+      "path": "zsh",
+    },
+    "fish": {
+      "path": "fish",
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux",
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell",
+    },
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "winopacity.opacity": 100,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "workbench.iconTheme": "symbols",
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  "editor.minimap.showSlider": "always",
 }

@@ -20,6 +20,9 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR="nvim"
 alias build="time g++ main.cpp -g -o run.exe"
+alias buildlray="gcc main.c -o app -lraylib -lGL -lm -lpthread -ldl -lrt -lX11"
+alias app="./app"
+alias buildall="time g++ *.cpp -g -o run.exe"
 alias run="./run.exe"
 alias cmbuild='mkdir -p build && cd build && cmake .. && cmake --build . && cd ..'
 alias cmrun='build/bin/app'
@@ -35,18 +38,17 @@ alias treefull="eza --tree --icons --long"
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-
-
-
-
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 
-
-
-
-
-
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$PATH:/home/leatuyrbertyk/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/leatuyrbertyk/.local/bin:$PATH"
