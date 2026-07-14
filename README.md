@@ -77,7 +77,7 @@ To make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/
 2. Set executable permisson:
 
    ```bash
-   cd ~/Documents/dotfiles/ && chmod +x install_stow.sh
+   cd ~/Documents/dotfiles/ && chmod +x install-stow.sh
    ```
 4. Stow all config to system:
 
