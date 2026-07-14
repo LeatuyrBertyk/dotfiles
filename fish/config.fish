@@ -29,10 +29,9 @@ alias claude-yolo "claude --dangerously-skip-permissions"
 alias nvimfzf "nvim (fzf)"
 alias drp "sudo docker run --name postgres-1 -v (pwd):/app -w /app -e POSTGRES_PASSWORD=mysecret -d -p 5432:5432 postgres:16-alpine"
 alias dpsql "sudo docker exec -it postgres-1 psql -U postgres"
-alias runsql "sudo docker exec -i postgres-1 psql -U postgres -f"
+alias rundpsql "sudo docker exec -i postgres-1 psql -U postgres -f"
 
-command -qv nvim && alias vim nvim
-
+# command -qv nvim && alias vim nvim
 set -gx EDITOR nvim
 
 set -gx PATH bin $PATH
@@ -60,7 +59,6 @@ if test -f $LOCAL_CONFIG
     source $LOCAL_CONFIG
 end
 
-# Fzf theme
 set -gx FZF_DEFAULT_OPTS "
   --layout=reverse
   --info=inline
