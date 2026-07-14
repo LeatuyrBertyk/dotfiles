@@ -64,3 +64,25 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
 - [z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - [PSFzf](https://github.com/kelleyma49/PSFzf) - Fuzzy finder
+
+## How to setup
+
+First step is cloning the repository through:
+```bash
+git clone https://github.com/LeatuyrBertyk/dotfiles/
+```
+
+Then, to make a simple workflow, you should **GNU Stow** tool to symlink configuration files in dotfiles directly to `HOME` and `HOME/.config` directory on personal computer. Use below command to do this task:
+
+```bash
+stow -t ~ zsh tmux
+```
+
+and
+
+```bash
+stow -t ~/.config alacritty fish ghostty lazygit mise nvim powershell wezterm zed
+```
+
+
+
