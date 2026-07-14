@@ -81,3 +81,5 @@ Then, to make a simple workflow, you should use [GNU Stow](https://github.com/as
    ```bash
    ./install-stow.sh
    ```
+
+*Note: **GNU Stow** is very sensitive, so you make sure that your config file do not exists before using `./install-stow.sh`. To prevent risks, you can make backups folders for your config before using this command.*
