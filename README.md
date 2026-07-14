@@ -98,3 +98,4 @@ After stowing this configuration, when opening terminal, you can see the fish th
     
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
 
+***Optional:*** If you want to use `nvim-josean` as default Neovim configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with `tmux-josean`.
