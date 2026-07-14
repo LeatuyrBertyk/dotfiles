@@ -75,7 +75,7 @@ git clone https://github.com/LeatuyrBertyk/dotfiles/
 Then, to make a simple workflow, you should use **GNU Stow** tool to symlink configuration files in dotfiles directly to `HOME` and `HOME/.config` directory on personal computer. Use below commands to do this task:
 
 ```bash
-stow -t ~ zsh tmux
+stow -t ~ zsh tmux vim
 ```
 
 and
