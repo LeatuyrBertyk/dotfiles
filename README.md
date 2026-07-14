@@ -67,10 +67,17 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## How to setup
 
-First step is cloning the repository through:
-```bash
-git clone https://github.com/LeatuyrBertyk/dotfiles/
-```
+Then, to make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Them follow below steps:
 
-Then, to make a simple workflow, you should use **Chezmoi** tool to automatically link configuration in dotfiles directly to `HOME` and `HOME/.config` directory on personal computer.
-
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/LeatuyrBertyk/dotfiles/
+  ```
+2. Set executable permisson
+   ```bash
+   cd ~/Documents/dotfiles/ && chmod +x install_stow.sh
+   ```
+3. Stow all config to system
+   ```bash
+   ./install-stow.sh
+   ```
