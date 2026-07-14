@@ -67,17 +67,20 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## How to setup
 
-Then, to make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Them follow below steps:
+To make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for detailed:
 
 1. Clone the repository:
+
   ```bash
   git clone https://github.com/LeatuyrBertyk/dotfiles/
   ```
-2. Set executable permisson
+2. Set executable permisson:
+
    ```bash
    cd ~/Documents/dotfiles/ && chmod +x install_stow.sh
    ```
-3. Stow all config to system
+4. Stow all config to system:
+
    ```bash
    ./install-stow.sh
    ```
