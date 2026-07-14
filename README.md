@@ -4,9 +4,7 @@ My workspace is created based on [craftzdog/dotfiles-public](https://github.com/
 
 ## Main workspace
 
-I almost use Ubuntu OS for default workspace as its versatility.
-
-Main workflow:
+I almost use Ubuntu OS for default workspace as its versatility, with main tools:
 
 - **ghostty** - Default terminal
 - **tmux** - Terminal multiplexer
