@@ -86,3 +86,15 @@ To make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/
    ```
 
 *Note: **GNU Stow** is very sensitive, so make sure that your config file do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
+
+After stowing this configuration, when opening terminal, you can see the fish theme is very simple. The reason is that `tide` plugin is not run, so to handle this problem, you should follow some steps below:
+
+5. Open `tide` configuration:
+
+   ```bash
+   tide configure
+   ```
+6. Customize the theme you prefer:
+    
+   In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is follow this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
+
