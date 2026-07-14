@@ -7,7 +7,7 @@ set tabstop=2
 set shiftwidth=2
 set listchars=tab:\¦\
 set list
-set foldmethod=syntax         
+set foldmethod=syntax
 set foldnestmax=1
 set foldlevelstart=3
 set number
@@ -22,7 +22,7 @@ set lazyredraw
 syntax on
 
 if has('win32')
-  set clipboard=unnamed  
+  set clipboard=unnamed
 else
   set clipboard=unnamedplus
 endif

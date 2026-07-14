@@ -28,6 +28,14 @@ alias cmbuild='mkdir -p build && cd build && cmake .. && cmake --build . && cd .
 alias cmrun='build/bin/app'
 alias python="python3"
 alias y="yazi"
+alias g git
+alias c claude
+alias claude-yolo "claude --dangerously-skip-permissions"
+alias nvimfzf "nvim (fzf)"
+
+alias drp "sudo docker run --name postgres-1 -v (pwd):/app -w /app -e POSTGRES_PASSWORD=mysecret -d -p 5432:5432 postgres:16-alpine"
+alias dpsql "sudo docker exec -it postgres-1 psql -U postgres"
+alias runsql "sudo docker exec -i postgres-1 psql -U postgres -f"
 
 # Eza (Better ls)
 alias ls="eza --icons=always"
@@ -38,9 +46,9 @@ alias treefull="eza --tree --icons --long"
 eval "$(zoxide init zsh)"
 alias cd="z"
 
-export GTK_IM_MODULE=ibus
-export QT_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
+# export GTK_IM_MODULE=ibus
+# export QT_IM_MODULE=ibus
+# export XMODIFIERS=@im=ibus
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$PATH:/home/leatuyrbertyk/.local/bin"
@@ -48,7 +56,3 @@ export PATH="$PATH:/home/leatuyrbertyk/.local/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# Added by Antigravity CLI installer
-export PATH="/home/leatuyrbertyk/.local/bin:$PATH"
