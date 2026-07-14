@@ -12,6 +12,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - **fish** - Default shell, convenience but has a weird configuration method
 - **Neovim** - Default text editor, with Lazy.nvim is core structure
 - **Visual Studio Code** - Another code editor, suitable for collaboration or big projects
+- **Zed** - New AI code editor, suitable for **Quarto**
 - **Git** - Project version control system
 - **lazygit** - GUI Git manager 
 
@@ -41,6 +42,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim)
 - [yazi](https://github.com/sxyazi/yazi)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Zed](https://zed.dev/)
 
 ## Shell setup (macOS & Linux)
 
