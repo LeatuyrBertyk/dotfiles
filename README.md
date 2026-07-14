@@ -71,9 +71,9 @@ To make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/
 
 1. Clone the repository:
 
-  ```bash
-  git clone https://github.com/LeatuyrBertyk/dotfiles/
-  ```
+   ```bash
+   git clone https://github.com/LeatuyrBertyk/dotfiles/
+   ```
 2. Set executable permisson:
 
    ```bash
