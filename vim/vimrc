@@ -41,6 +41,6 @@ command! -nargs=1 SS rightbelow split <args>
 command! Vterm rightbelow vertical terminal
 command! Sterm rightbelow terminal
 
-if filereadable(expand("~/.vimrc.plug"))
-	source ~/.vimrc.plug
+if filereadable(expand("~/.config/.vimrc.plug"))
+	source ~/.config/.vimrc.plug
 endif
