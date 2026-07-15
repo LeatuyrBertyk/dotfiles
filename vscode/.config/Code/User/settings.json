@@ -4,7 +4,7 @@
   "workbench.editorAssociations": {
     "*.exe": "default",
   },
-  "editor.fontFamily": "'JetBrainsMono Nerd Font',monospace",
+  "editor.fontFamily": "'PlemolJP Console NF'",
   "editor.fontLigatures": true,
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
