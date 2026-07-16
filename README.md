@@ -107,12 +107,12 @@ First of all, make sure you have downloaded all needed tools, packages and depen
 
 After stowing this configuration, when opening terminal, you can see the **Fish** theme is very simple. The reason is that `tide` plugin is not started up, so you should follow some more steps below:
 
-5. Open `tide` theme configuration:
+4. Open `tide` theme configuration:
 
    ```bash
    tide configure
    ```
-6. Customize the theme you prefer:
+5. Customize the theme you prefer:
 
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
 
