@@ -45,7 +45,7 @@ For **Terminal** and **Neovim** setup, make sure you have downloaded all needed 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `powershell/settings.json` into this file, and save it.
 4. Make sure **Powershell** get the correct config files:
    
-   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
+   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `$env:USERPROFILE/Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
    ```bash
    nvim $PROFILE.CurrentUserCurrentHost
    ```
