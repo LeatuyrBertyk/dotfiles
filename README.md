@@ -181,7 +181,7 @@ Keep patient as this configuration may take many troubles.
    Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
 6. Link **Neovim** with `clangd`:
 
-   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory of **MSYS2** and Windows OS.
+   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory managements of **MSYS2** and Windows OS.
 
    To handle this problem, you should change some small config in `$env:LOCALAPPDATA/nvim/plugins/lsp.lua`:
    ```powershell
