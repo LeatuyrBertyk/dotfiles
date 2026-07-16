@@ -79,11 +79,11 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## How to setup
 
-### macOS & Linu setup
+### macOS & Linux setup
 
 *Note: available for all except **powershell**.*
 
-First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
+First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple installation flow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
 
 1. Clone the repository:
 
@@ -105,9 +105,9 @@ First of all, make sure you have downloaded all needed tools, packages and depen
 
 *Note: **GNU Stow** is very sensitive, so make sure that your config file do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
 
-After stowing this configuration, when opening terminal, you can see the fish theme is very simple. The reason is that `tide` plugin is not run, so to handle this problem, you should follow some steps below:
+After stowing this configuration, when opening terminal, you can see the **Fish** theme is very simple. The reason is that `tide` plugin is not started up, so you should follow some more steps below:
 
-5. Open `tide` configuration:
+5. Open `tide` theme configuration:
 
    ```bash
    tide configure
@@ -146,7 +146,7 @@ Keep patient as this configuration may take many troubles.
      ```powershell
      Copy-Item -Path "~/Documents/dotfiles/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
      ```
-   ***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with `tmux-josean`.
+   ***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/zed/` such that the official configuration is in file `settings.json`.
 2. Set theme and other settings:
 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `powershell/settings.json` into this file, and save it.
@@ -162,14 +162,15 @@ Keep patient as this configuration may take many troubles.
    ```
    . $env:USERPROFILE\.config\powershell\user_profile.ps1
    ```
-4. Install `clangd` for coding suggestions:
+   Remember to save this file by `:wq` (in **Neovim**).
+4. Install `clangd` for `C/C++` coding suggestions:
 
-   Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on this terminal)*:
+   Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on the terminal)*:
    ```bash
    pacman -S mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-clang-tools-extra
    ```
 
-Type `y` for all requirements or suggestions.
+   Type `y` for all requirements or suggestions.
 5. Download `clangd` for **Neovim**:
 
    Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
@@ -177,7 +178,7 @@ Type `y` for all requirements or suggestions.
 
    Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory of **MSYS2** and Windows OS.
 
-   To handle this problem, you should change some config of `$env:LOCALAPPDATA/nvim/plugins/lsp.lua`:
+   To handle this problem, you should change some small config in `$env:LOCALAPPDATA/nvim/plugins/lsp.lua`:
    ```powershell
    Copy-Item -Path "~/Documents/dotfiles/powershell/lsp.lua" -Destination "$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua" -Force
    ```
