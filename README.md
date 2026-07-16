@@ -32,8 +32,9 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [Nodejs](https://nodejs.org/en)
 - [yazi](https://github.com/sxyazi/yazi)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Zed](https://zed.dev/)
+- [Visual Studio Code](https://code.visualstudio.com/) ***(optional)***
+- [Zed](https://zed.dev/) ***(optional)***
+- [vim](https://www.vim.org/) ***(optional)***
 - a **C** compiler for `nvim-treesitter`. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
 - for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) ***(optional)***
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -61,6 +62,9 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - Git >=**2.19.0**
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [Nodejs](https://nodejs.org/en)
+- [Visual Studio Code](https://code.visualstudio.com/) ***(optional)***
+- [Zed](https://zed.dev/) ***(optional)***
+- [vim](https://www.vim.org/) ***(optional)***
 - [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) - Default terminal manager
 - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6) - Default shell
 - [MSYS2](https://www.msys2.org/) - `C/C++` compiler for Windows
@@ -75,14 +79,16 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## How to setup
 
-### macOs & Linux
+### macOS & Linux
 
 First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/LeatuyrBertyk/dotfiles/
+   cd ~/Documents/ &&
+   git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
+   cd ..
    ```
 2. Set executable permission:
 
@@ -112,4 +118,60 @@ After stowing this configuration, when opening terminal, you can see the fish th
 
 ### Windows
 
-I have a detailed instruction in `dotfiles/powershell/instructiona.md`, follow it to have a smooth installation.
+*Note: this configuration is only for **nvim, nvim-josean, powershell, vim, vscode, zed**. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
+
+Make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Ubuntu or Macos, so this setup may take much time.
+
+First, clone the repository:
+```bash
+cd ~/Documents &&
+git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
+cd..
+```
+
+#### Powershell and Neovim setup
+
+Keep patient as this configuration may take many troubles.
+
+1. Move config files to correct directory:
+
+   - Move folder `powershell` to `C:/Users/<user_name>/.config` (same directory with `scoop`):
+     ```powershell
+     Copy-Item -Path "~/Documents/dotfiles/powershell/takuya.omp.json" -Destination "~/.config/powershell/takuya.omp.json" -Force;
+     Copy-Item -Path "~/Documents/dotfiles/powershell/user_profile.ps1" -Destination "~/.config/powershell/user_profile.ps1" -Force
+     ```
+   - Move folder `nvim` to `$env:LOCALAPPDATA`:
+     ```powershell
+     Copy-Item -Path "~/Documents/dotfiles/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
+     ```
+2. Set theme and other settings:
+
+   Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `powershell/settings.json` into this file, and save it.
+
+   *Note: you should do this step by hand as the directory of `settings.json` depends on each user's computer, this is the disadvantages of using Windows.*
+3. Make sure **Powershell** get the correct config files:
+
+   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
+   ```powershell
+   nvim $PROFILE.CurrentUserCurrentHost
+   ```
+   Then paste below source code into this file:
+   ```
+   . $env:USERPROFILE\.config\powershell\user_profile.ps1
+   ```
+4. Install `clangd` for coding suggestions:
+    
+   Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on this terminal)*:
+   ```bash
+   pacman -S mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-clang-tools-extra
+   ```
+    
+   Type `y` for all requirements or suggestions.
+5. Download `clangd` for **Neovim**:
+    
+   Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
+6. Link **Neovim** with `clangd`:
+    
+   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory of **MSYS2** and Windows OS.
+
+   To handle this problem, go to directory `$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua`, remove all current content in the file. Then paste new configuration in `lsp.lua` file.
