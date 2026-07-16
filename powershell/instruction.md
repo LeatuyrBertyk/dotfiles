@@ -32,7 +32,7 @@ First of all, you have to clone this repository to local computer:
    git clone https://github.com/LeatuyrBertyk/dotfiles/
    ```
 
-For **vim**, **vscode** and **zed**, you should copy the each config folder directly to config directory on your computer (copy/paste by hand).
+For **vim**, **vscode** and **zed**, you should copy each config folder directly to config directory on your computer (copy/paste by hand).
 
 For **Terminal** and **Neovim** setup, make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Ubuntu or Macos, so this setup may take much time, following below steps:
 
@@ -45,7 +45,7 @@ For **Terminal** and **Neovim** setup, make sure you have downloaded all needed 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `powershell/settings.json` into this file, and save it.
 4. Make sure **Powershell** get the correct config files:
    
-   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
+   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `$env:USERPROFILE/Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
    ```bash
    nvim $PROFILE.CurrentUserCurrentHost
    ```
@@ -55,7 +55,7 @@ For **Terminal** and **Neovim** setup, make sure you have downloaded all needed 
    ```
 5. Install `clangd` for coding suggestions:
     
-   Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on this terminal)*:
+   Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on the terminal)*:
    ```bash
    pacman -S mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-clang-tools-extra
    ```
@@ -66,6 +66,6 @@ For **Terminal** and **Neovim** setup, make sure you have downloaded all needed 
    Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
 7. Link **Neovim** with `clangd`:
     
-   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory of **MSYS2** and Windows OS.
+   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory managements of **MSYS2** and Windows OS.
 
    To handle this problem, go to directory `$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua`, remove all current content in the file. Then paste new configuration in `lsp.lua` file.
