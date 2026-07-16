@@ -32,7 +32,7 @@ First of all, you have to clone this repository to local computer:
    git clone https://github.com/LeatuyrBertyk/dotfiles/
    ```
 
-For **vim**, **vscode** and **zed**, you should copy the each config folder directly to config directory on your computer (copy/paste by hand).
+For **vim**, **vscode** and **zed**, you should copy each config folder directly to config directory on your computer (copy/paste by hand).
 
 For **Terminal** and **Neovim** setup, make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Ubuntu or Macos, so this setup may take much time, following below steps:
 
