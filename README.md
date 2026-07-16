@@ -177,7 +177,10 @@ Type `y` for all requirements or suggestions.
 
    Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory of **MSYS2** and Windows OS.
 
-   To handle this problem, go to directory `$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua`, remove all current content in the file. Then paste new configuration in `lsp.lua` file.
+   To handle this problem, you should change some config of `$env:LOCALAPPDATA/nvim/plugins/lsp.lua`:
+   ```powershell
+   Copy-Item -Path "~/Documents/dotfiles/powershell/lsp.lua" -Destination "$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua" -Force
+   ```
 
 #### Vim, VScode and Zed setup
 
