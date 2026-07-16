@@ -153,8 +153,10 @@ Keep patient as this configuration may take many troubles.
      ```powershell
      Copy-Item -Path "~/Documents/dotfiles/.config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
      ```
+
    > [!TIP]
    > If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
+
 2. Set theme and other settings:
 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `dotfiles/.config/powershell/settings.json` into this file, and save it.
