@@ -86,7 +86,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ### macOS & Linux setup
 
-*Note: available for all except **powershell**.*
+*Note: available for all except* `dotfiles/.config/powershell`.
 
 First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple installation flow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
 
@@ -121,11 +121,11 @@ After stowing this configuration, when opening terminal, you can see the **Fish*
 
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
 
-***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/zed/` such that the official configuration is in file `settings.json`.
+***Optional:*** If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
 
 ### Windows setup
 
-*Note: available only for **nvim, nvim-josean, powershell, vim, vscode, zed**. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
+*Note: available only for* `dotfiles/.config/nvim nvim-josean powershell vim vscode zed` *. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
 
 Make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Linux or macOS, so this setup may take much time.
 
@@ -144,17 +144,17 @@ Keep patient as this configuration may take many troubles.
 
    - Move folder `powershell` to `C:/Users/<user_name>/.config` (same directory with `scoop`):
      ```powershell
-     Copy-Item -Path "~/Documents/dotfiles/powershell/takuya.omp.json" -Destination "~/.config/powershell/takuya.omp.json" -Force;
-     Copy-Item -Path "~/Documents/dotfiles/powershell/user_profile.ps1" -Destination "~/.config/powershell/user_profile.ps1" -Force
+     Copy-Item -Path "~/Documents/dotfiles/.config/powershell/takuya.omp.json" -Destination "~/.config/powershell/takuya.omp.json" -Force;
+     Copy-Item -Path "~/Documents/dotfiles/.config/powershell/user_profile.ps1" -Destination "~/.config/powershell/user_profile.ps1" -Force
      ```
    - Move folder `nvim` to `$env:LOCALAPPDATA`:
      ```powershell
-     Copy-Item -Path "~/Documents/dotfiles/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
+     Copy-Item -Path "~/Documents/dotfiles/.config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
      ```
-   ***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/zed/` such that the official configuration is in file `settings.json`.
+   ***Optional:*** If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
 2. Set theme and other settings:
 
-   Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `powershell/settings.json` into this file, and save it.
+   Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `dotfiles/.config/powershell/settings.json` into this file, and save it.
 
    *Note: you should do this step by hand as the directory of `settings.json` depends on each user's computer, this is the disadvantages of using Windows.*
 3. Make sure **Powershell** get the correct config files:
@@ -185,21 +185,21 @@ Keep patient as this configuration may take many troubles.
 
    To handle this problem, you should change some small config in `$env:LOCALAPPDATA/nvim/plugins/lsp.lua`:
    ```powershell
-   Copy-Item -Path "~/Documents/dotfiles/powershell/lsp.lua" -Destination "$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua" -Force
+   Copy-Item -Path "~/Documents/dotfiles/.config/powershell/lsp.lua" -Destination "$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua" -Force
    ```
 
 #### Vim, VScode and Zed setup
 
 - For **Vim**:
   ```powershell
-  Copy-Item -Path "~/Documents/dotfiles/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force
-  Copy-Item -Path "~/Documents/dotfiles/vim/vimrc" -Destination "~/.vimrc" -Force
+  Copy-Item -Path "~/Documents/dotfiles/.config/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force
+  Copy-Item -Path "~/Documents/dotfiles/.config/vim/vimrc" -Destination "~/.vimrc" -Force
   ```
 - For **Vscode**:
   ```powershell
-  Copy-Item -Path "~/Documents/dotfiles/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
+  Copy-Item -Path "~/Documents/dotfiles/.config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
   ```
 - For **Zed**:
   ```powershell
-  Copy-Item -Path "~/Documents/dotfiles/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
+  Copy-Item -Path "~/Documents/dotfiles/.config/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
   ```
