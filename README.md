@@ -82,11 +82,10 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - [PSFzf](https://github.com/kelleyma49/PSFzf) - Fuzzy finder
 
-## How to setup
+## Shell setup (macOS & Linux)
 
-### macOS & Linux setup
-
-*Note: available for all except* `dotfiles/.config/powershell`.
+> [!IMPORTANT]
+> Available for all **EXCEPT** `dotfiles/.config/powershell`.
 
 First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple installation flow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
 
@@ -123,9 +122,10 @@ After stowing this configuration, when opening terminal, you can see the **Fish*
 
 ***Optional:*** If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
 
-### Windows setup
+## Powershell setup (Windows)
 
-*Note: available only for* `dotfiles/.config/nvim nvim-josean powershell vim vscode zed` *. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
+> [!IMPORTANT] 
+> Available only for `dotfiles/.config/nvim nvim-josean powershell vim vscode zed`. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
 
 Make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Linux or macOS, so this setup may take much time.
 
@@ -136,7 +136,7 @@ git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
 cd..
 ```
 
-#### Powershell and Neovim setup
+### Powershell and Neovim setup
 
 Keep patient as this configuration may take many troubles.
 
@@ -188,7 +188,7 @@ Keep patient as this configuration may take many troubles.
    Copy-Item -Path "~/Documents/dotfiles/.config/powershell/lsp.lua" -Destination "$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua" -Force
    ```
 
-#### Vim, VScode and Zed setup
+### Vim, VScode and Zed setup
 
 - For **Vim**:
   ```powershell
