@@ -66,6 +66,6 @@ For **Terminal** and **Neovim** setup, make sure you have downloaded all needed 
    Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
 7. Link **Neovim** with `clangd`:
     
-   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory management of **MSYS2** and Windows OS.
+   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory managements of **MSYS2** and Windows OS.
 
    To handle this problem, go to directory `$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua`, remove all current content in the file. Then paste new configuration in `lsp.lua` file.
