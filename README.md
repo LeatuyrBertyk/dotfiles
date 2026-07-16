@@ -24,11 +24,16 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## Requirements
 
+### Shell setup (macOS & Linux)
+
 - Neovim >=**0.9.0** (needs to be built with **LuaJIT**)
-- Git >=**2.19.0**
 - [LazyVim](https://www.lazyvim.org/)
-- a [Nerd Font](https://www.nerdfonts.com/)(v3.0 or greater) ***(optional, but needed to display some icons)***
+- Git >=**2.19.0**
 - [lazygit](https://github.com/jesseduffield/lazygit)
+- [Nodejs](https://nodejs.org/en)
+- [yazi](https://github.com/sxyazi/yazi)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Zed](https://zed.dev/)
 - a **C** compiler for `nvim-treesitter`. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
 - for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) ***(optional)***
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -40,12 +45,6 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
   - [alacritty](https://github.com/alacritty/alacritty) ***(Linux, Macos & Windows)***
   - [iterm2](https://iterm2.com/) ***(Macos)***
 - [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim)
-- [yazi](https://github.com/sxyazi/yazi)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Zed](https://zed.dev/)
-
-## Shell setup (macOS & Linux)
-
 - [Fish shell](https://fishshell.com/)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme
@@ -55,8 +54,17 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [ghq](https://github.com/x-motemen/ghq) - Local Git repository organizer
 - [fzf](https://github.com/PatrickF1/fzf.fish) - Interactive filtering
 
-## PowerShell setup (Windows)
+### PowerShell setup (Windows)
 
+- Neovim >=**0.9.0** (needs to be built with **LuaJIT**)
+- [LazyVim](https://www.lazyvim.org/)
+- Git >=**2.19.0**
+- [lazygit](https://github.com/jesseduffield/lazygit)
+- [Nodejs](https://nodejs.org/en)
+- [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) - Default terminal manager
+- [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6) - Default shell
+- [MSYS2](https://www.msys2.org/) - `C/C++` compiler for Windows
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use Hack Nerd Font
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
@@ -67,14 +75,16 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## How to setup
 
-To make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details.
+### macOs & Linux
+
+First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/LeatuyrBertyk/dotfiles/
    ```
-2. Set executable permisson:
+2. Set executable permission:
 
    ```bash
    cd ~/Documents/dotfiles/ && chmod +x install-stow.sh
@@ -95,7 +105,11 @@ After stowing this configuration, when opening terminal, you can see the fish th
    tide configure
    ```
 6. Customize the theme you prefer:
-    
+
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
 
-***Optional:*** If you want to use `nvim-josean` as default Neovim configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with `tmux-josean`.
+***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with `tmux-josean`.
+
+### Windows
+
+I have a detailed instruction in `dotfiles/powershell/instructiona.md`, follow it to have a smooth installation.
