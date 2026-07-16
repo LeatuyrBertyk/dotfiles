@@ -1,3 +1,7 @@
+![fish screenshot](./images/screenshot-shell.png)
+
+![nvim screenshot](./images/screenshot-neovim.png)
+
 # Leatuyr Bertyk's dotfiles
 
 My workspace is created based on [craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public) - a repository of Takuya Matsuyama (a freelancer from Japan, who created [Inkdrop](https://www.inkdrop.app/)), and [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) - a default workspace of Josean Matinez (a full-stack software engineer). And I have added some personal implementation to make the original configurations suitable for my coding workspace on Ubuntu (26.04 LTS) and Windows 10.
