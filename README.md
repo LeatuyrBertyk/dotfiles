@@ -34,7 +34,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [yazi](https://github.com/sxyazi/yazi)
 - [Visual Studio Code](https://code.visualstudio.com/) ***(optional)***
 - [Zed](https://zed.dev/) ***(optional)***
-- [vim](https://www.vim.org/) ***(optional)***
+- [Vim](https://www.vim.org/) ***(optional)***
 - a **C** compiler for `nvim-treesitter`. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
 - for [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) ***(optional)***
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -64,7 +64,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [Nodejs](https://nodejs.org/en)
 - [Visual Studio Code](https://code.visualstudio.com/) ***(optional)***
 - [Zed](https://zed.dev/) ***(optional)***
-- [vim](https://www.vim.org/) ***(optional)***
+- [Vim](https://www.vim.org/) ***(optional)***
 - [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) - Default terminal manager
 - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6) - Default shell
 - [MSYS2](https://www.msys2.org/) - `C/C++` compiler for Windows
