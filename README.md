@@ -112,4 +112,4 @@ After stowing this configuration, when opening terminal, you can see the fish th
 
 ### Windows
 
-I have a detailed instruction in `dotfiles/powershell/instructiona.md`, follow it to have a smooth installation.
+I have a detailed instruction in `dotfiles/powershell/instruction.md`, follow it to have a smooth installation.
