@@ -23,7 +23,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 ***Optional:***
 
 - **zsh** - Original shell, basic configuration
-- **Alacritty** and **Wezterm** - Other terminal with other advantages (depends on users' purpose)
+- **Alacritty** and **Wezterm** - Other terminal with other advantages (depend on users' purposes)
 - **Vim** - Legendary code editor with fast speed, but old and hard to add new configuration
 
 ## Requirements
@@ -108,7 +108,7 @@ First of all, make sure you have downloaded all needed tools, packages and depen
    ```
 
 > [!WARNING]
-> **GNU Stow** is very sensitive, so make sure that your config file do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
+> **GNU Stow** is very sensitive, so make sure that your config files do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
 
 After stowing this configuration, when opening terminal, you can see the **Fish** theme is very simple. The reason is that `tide` plugin is not started up, so you should follow some more steps below:
 
@@ -119,7 +119,7 @@ After stowing this configuration, when opening terminal, you can see the **Fish*
    ```
 5. Customize the theme you prefer:
 
-   In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
+   In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at the end.
 
 > [!TIP]
 > If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
@@ -127,7 +127,7 @@ After stowing this configuration, when opening terminal, you can see the **Fish*
 ## Powershell setup (Windows)
 
 > [!IMPORTANT] 
-> Available only for `dotfiles/.config/nvim nvim-josean powershell vim vscode zed`. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
+> Available only for `dotfiles/.config/nvim nvim-josean powershell vim vscode zed`. And the shell I mention here is **Powershell 7**, which is downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
 
 Make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Linux or macOS, so this setup may take much time.
 
@@ -161,7 +161,7 @@ Keep patient as this configuration may take many troubles.
 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `dotfiles/.config/powershell/settings.json` into this file, and save it.
 
-   *Note: you should do this step by hand as the directory of `settings.json` depends on each user's computer, this is the disadvantages of using Windows.*
+   *Note: you should do this step by hand as the directory of `settings.json` depends on each user's computer, this is the disadvantage of using Windows.*
 3. Make sure **Powershell** get the correct config files:
 
    Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `~/Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
@@ -175,7 +175,7 @@ Keep patient as this configuration may take many troubles.
    Remember to save this file by `:wq` (in **Neovim**).
 4. Install `clangd` for `C/C++` coding suggestions:
 
-   Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on the terminal)*:
+   Open the **UCRT64** terminal and use this command *(can not paste so you have to type directly on the terminal)*:
    ```bash
    pacman -S mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-clang-tools-extra
    ```
@@ -186,7 +186,7 @@ Keep patient as this configuration may take many troubles.
    Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
 6. Link **Neovim** with `clangd`:
 
-   Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory managements of **MSYS2** and Windows OS.
+   Although you used **Mason** plugin manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory management methods of **MSYS2** and Windows OS.
 
    To handle this problem, you should change some small config in `$env:LOCALAPPDATA/nvim/plugins/lsp.lua`:
    ```powershell
