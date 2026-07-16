@@ -79,7 +79,9 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 
 ## How to setup
 
-### macOS & Linux
+### macOS & Linu setup
+
+*Note: available for all except **powershell**.*
 
 First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple workflow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
 
@@ -114,13 +116,13 @@ After stowing this configuration, when opening terminal, you can see the fish th
 
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
 
-***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with `tmux-josean`.
+***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/zed/` such that the official configuration is in file `settings.json`.
 
-### Windows
+### Windows setup
 
-*Note: this configuration is only for **nvim, nvim-josean, powershell, vim, vscode, zed**. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
+*Note: available only for **nvim, nvim-josean, powershell, vim, vscode, zed**. And the shell I mention here is **Powershell 7**, which downloaded from **Microsoft Store**, is not the default Powershell on Windows.*
 
-Make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Ubuntu or Macos, so this setup may take much time.
+Make sure you have downloaded all needed tools, packages and dependencies. Windows OS is not an ideal environment for coding as Linux or macOS, so this setup may take much time.
 
 First, clone the repository:
 ```bash
@@ -144,6 +146,7 @@ Keep patient as this configuration may take many troubles.
      ```powershell
      Copy-Item -Path "~/Documents/dotfiles/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
      ```
+   ***Optional:*** If you want to use `nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with `tmux-josean`.
 2. Set theme and other settings:
 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `powershell/settings.json` into this file, and save it.
@@ -151,7 +154,7 @@ Keep patient as this configuration may take many troubles.
    *Note: you should do this step by hand as the directory of `settings.json` depends on each user's computer, this is the disadvantages of using Windows.*
 3. Make sure **Powershell** get the correct config files:
 
-   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
+   Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `~/Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
    ```powershell
    nvim $PROFILE.CurrentUserCurrentHost
    ```
@@ -160,18 +163,34 @@ Keep patient as this configuration may take many troubles.
    . $env:USERPROFILE\.config\powershell\user_profile.ps1
    ```
 4. Install `clangd` for coding suggestions:
-    
+
    Open the **UCRT64** terminal and use this command *(cannot paste so you have to type directly on this terminal)*:
    ```bash
    pacman -S mingw-w64-ucrt-x86_64-clang mingw-w64-ucrt-x86_64-clang-tools-extra
    ```
-    
-   Type `y` for all requirements or suggestions.
+
+Type `y` for all requirements or suggestions.
 5. Download `clangd` for **Neovim**:
-    
+
    Open **Neovim**, and type `:Mason`, then find `clangd` and install it.
 6. Link **Neovim** with `clangd`:
-    
+
    Although you used **Mason** plugins manager to install `clangd` in **Neovim**, system still can not link to this tool as the confliction between directory of **MSYS2** and Windows OS.
 
    To handle this problem, go to directory `$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua`, remove all current content in the file. Then paste new configuration in `lsp.lua` file.
+
+#### Vim, VScode and Zed setup
+
+- For **Vim**:
+  ```powershell
+  Copy-Item -Path "~/Documents/dotfiles/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force
+  Copy-Item -Path "~/Documents/dotfiles/vim/vimrc" -Destination "~/.vimrc" -Force
+  ```
+- For **Vscode**:
+  ```powershell
+  Copy-Item -Path "~/Documents/dotfiles/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
+  ```
+- For **Zed**:
+  ```powershell
+  Copy-Item -Path "~/Documents/dotfiles/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
+  ```
