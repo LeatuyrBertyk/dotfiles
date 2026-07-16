@@ -107,7 +107,8 @@ First of all, make sure you have downloaded all needed tools, packages and depen
    ./install-stow.sh
    ```
 
-*Note: **GNU Stow** is very sensitive, so make sure that your config file do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
+> [!WARNING]
+> **GNU Stow** is very sensitive, so make sure that your config file do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
 
 After stowing this configuration, when opening terminal, you can see the **Fish** theme is very simple. The reason is that `tide` plugin is not started up, so you should follow some more steps below:
 
@@ -120,7 +121,8 @@ After stowing this configuration, when opening terminal, you can see the **Fish*
 
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at last.
 
-***Optional:*** If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
+> [!TIP]
+> If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
 
 ## Powershell setup (Windows)
 
@@ -151,7 +153,8 @@ Keep patient as this configuration may take many troubles.
      ```powershell
      Copy-Item -Path "~/Documents/dotfiles/.config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
      ```
-   ***Optional:*** If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
+   > [!TIP]
+   > If you want to use `dotfiles/.config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/.config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/.config/zed/` such that the official configuration is in file `settings.json`.
 2. Set theme and other settings:
 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `dotfiles/.config/powershell/settings.json` into this file, and save it.
