@@ -1,15 +1,15 @@
 # Leatuyr Bertyk's dotfiles
 
-My workspace is created based on [craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public) - a repository of Takuya Matsuyama (a freelancer from Japan, who created InkDrop), and [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) - a default workspace of Josean Matinez (a full-stack software engineer). And I have added some personal implementation to make the original configurations suitable for my coding workspace on Ubuntu (26.04 LTS) and Windows 10.
+My workspace is created based on [craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public) - a repository of Takuya Matsuyama (a freelancer from Japan, who created [Inkdrop](https://www.inkdrop.app/)), and [josean-dev/dev-environment-files](https://github.com/josean-dev/dev-environment-files) - a default workspace of Josean Matinez (a full-stack software engineer). And I have added some personal implementation to make the original configurations suitable for my coding workspace on Ubuntu (26.04 LTS) and Windows 10.
 
 ## Main workspace
 
 I almost use Ubuntu OS for default workspace as its versatility, with main tools:
 
-- **ghostty** - Default terminal
+- **Ghostty** - Default terminal
 - **tmux** - Terminal multiplexer
 - **yazi** - Terminal file manager
-- **fish** - Default shell, convenience but has a weird configuration method
+- **Fish** - Default shell, convenience but has a weird configuration method
 - **Neovim** - Default text editor, with Lazy.nvim is core structure
 - **Visual Studio Code** - Another code editor, suitable for collaboration or big projects
 - **Zed** - New AI code editor, suitable for **Quarto**
@@ -19,7 +19,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 ***Optional:***
 
 - **zsh** - Original shell, basic configuration
-- **alacritty** and **wezterm** - Other terminal with other advantages (depends on users' purpose)
+- **Alacritty** and **Wezterm** - Other terminal with other advantages (depends on users' purpose)
 - **Vim** - Legendary code editor with fast speed, but old and hard to add new configuration
 
 ## Requirements
@@ -40,11 +40,12 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
   - **find files**: [fd](https://github.com/sharkdp/fd)
 - a terminal that support true color and *undercurl*:
-  - [ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended)
-  - [kitty](https://github.com/kovidgoyal/kitty) ***(Linux & Macos)***
-  - [wezterm](https://github.com/wez/wezterm) ***(Linux, Macos & Windows)***
-  - [alacritty](https://github.com/alacritty/alacritty) ***(Linux, Macos & Windows)***
+  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended)
+  - [Kitty](https://github.com/kovidgoyal/kitty) ***(Linux & Macos)***
+  - [Wezterm](https://github.com/wez/wezterm) ***(Linux, Macos & Windows)***
+  - [Alacritty](https://github.com/alacritty/alacritty) ***(Linux, Macos & Windows)***
   - [iterm2](https://iterm2.com/) ***(Macos)***
+- [tmux](https://github.com/tmux/tmux/wiki)
 - [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim)
 - [Fish shell](https://fishshell.com/)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
@@ -67,7 +68,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [Vim](https://www.vim.org/) ***(optional)***
 - [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) - Default terminal manager
 - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6) - Default shell
-- [MSYS2](https://www.msys2.org/) - `C/C++` compiler for Windows
+- [MSYS2](https://www.msys2.org/) - a `C/C++` compiler for Windows
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use Hack Nerd Font
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
