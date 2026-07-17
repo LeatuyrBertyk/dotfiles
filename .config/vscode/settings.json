@@ -4,7 +4,7 @@
   "workbench.editorAssociations": {
     "*.exe": "default",
   },
-  "editor.fontFamily": "'PlemolJP Console NF'",
+  "editor.fontFamily": "'Hack Nerd Font'",
   "editor.fontLigatures": true,
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
@@ -22,7 +22,7 @@
   "editor.lineNumbers": "relative",
   "editor.codeActionsOnSave": {},
   "window.zoomLevel": 0.6,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "workbench.activityBar.location": "top",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.defaultProfile.linux": "fish",
