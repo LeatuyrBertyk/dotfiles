@@ -37,7 +37,7 @@
   "buffer_font_fallbacks": [
     "monospace"
   ],
-  "buffer_font_family": "PlemolJP Console NF",
+  "buffer_font_family": "Hack Nerd Font",
   "use_on_type_format": true,
   "soft_wrap": "editor_width",
   "agent_servers": {
@@ -51,6 +51,6 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Ayu Dark",
+    "dark": "Aura Dark (Soft Text)",
   },
 }
