@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Go to dotfiles directory
-cd ~/Documents/dotfiles/.config || exit
+cd ~/Documents/dotfiles/config || exit
 
 echo "Linking with zsh..."
 stow -t ~ zsh
