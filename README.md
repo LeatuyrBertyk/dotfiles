@@ -201,7 +201,7 @@ Keep patient as this configuration may take many troubles.
   Copy-Item -Path "~/Documents/dotfiles/config/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force
   Copy-Item -Path "~/Documents/dotfiles/config/vim/vimrc" -Destination "~/.vimrc" -Force
   ```
-- For **Vscode**:
+- For **VScode**:
   ```powershell
   Copy-Item -Path "~/Documents/dotfiles/config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
   ```
