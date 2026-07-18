@@ -54,7 +54,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [Fish shell](https://fishshell.com/)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme
-- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use [PlemolJP](https://github.com/yuru7/PlemolJP) and BlexMono (see [here](https://formulae.brew.sh/cask/font-blex-mono-nerd-font)).
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use [PlemolJP](https://github.com/yuru7/PlemolJP) and [BlexMono](https://formulae.brew.sh/cask/font-blex-mono-nerd-font).
 - [z for fish](https://github.com/jethrokuan/z) - Directory jumping
 - [Eza](https://github.com/eza-community/eza) - `ls` replacement
 - [ghq](https://github.com/x-motemen/ghq) - Local Git repository organizer
@@ -74,7 +74,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 - [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) - Default terminal manager
 - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6) - Default shell
 - [MSYS2](https://www.msys2.org/) - a `C/C++` compiler for Windows
-- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use Hack Nerd Font
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development-use. I use Hack Nerd Font.
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
