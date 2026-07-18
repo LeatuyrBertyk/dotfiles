@@ -156,13 +156,13 @@ Keep patient as this configuration may take many troubles.
      ```
 
 > [!TIP]
-> If you want to use `dotfiles/config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/config/zed/` such that the official configuration is in file `settings.json`.
+> If you want to use `dotfiles/config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with $$Tmux$$ in `dotfiles/config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/config/zed/` such that the official configuration is in file `settings.json`.
 
 2. Set theme and other settings:
 
    Open file `settings.json` in settings of **Windows Terminal**, remove all current content in this file, then paste new config in `dotfiles/config/powershell/settings.json` into this file, and save it.
 
-   *Note: you should do this step by hand as the directory of `settings.json` depends on each user's computer, this is the disadvantage of using Windows.*
+   *Note: you should do this step by hand as the exact directory of `settings.json` depends on specific version of the app you installed, this is one of the drawbacks when using Windows.*
 3. Make sure **Powershell** get the correct config files:
 
    Because we are using **Powershell 7**, which is not the default on Windows, so in fact, it will take the config in directory `~/Documents/Powershell/Microsoft.PowerShell_profile.ps1`. However, this manipulation is not a good practise. To handle this problem, we have to link **Powershell 7** with the config of default setup:
