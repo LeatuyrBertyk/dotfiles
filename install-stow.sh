@@ -9,7 +9,7 @@ stow -t ~ zsh
 echo "Linking with vscode..."
 stow -t ~/.config/Code/User vscode
 
-for dir in alacritty fish ghostty lazygit mise nvim nvim-josean tmux tmux-josean vim wezterm zed; do
+for dir in alacritty fish ghostty kitty lazygit mise nvim nvim-josean tmux tmux-josean vim wezterm zed; do
   if [ -d "$dir" ]; then
     echo "Linking with $dir..."
 
