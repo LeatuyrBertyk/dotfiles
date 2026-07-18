@@ -83,7 +83,7 @@ I primarily use Ubuntu as my default workspace because of its versatility. Main 
 - [z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - [PSFzf](https://github.com/kelleyma49/PSFzf) - Fuzzy finder
 
-## Shell setup (macOS & Linux)
+## macOS & Linux setup
 
 > [!IMPORTANT]
 > Available for all **EXCEPT** `dotfiles/.config/powershell`.
@@ -124,7 +124,7 @@ After stowing the configuration, your **Fish** theme may appear very simple beca
 > [!TIP]
 > If you want to use `dotfiles/config/nvim-josean` as the default **Neovim** configuration, first back up your existing `nvim` folder, then rename `nvim-josean` to `nvim`. Do the same for **Tmux** using `dotfiles/config/tmux-josean`. For **Zed**, swap the names of the two `.json` files in `dotfiles/config/zed/` such that the official configuration is in `settings.json`.
 
-## Powershell setup (Windows)
+## Windows setup
 
 > [!IMPORTANT]
 > Available only for `dotfiles/config/nvim`, `nvim-josean`, `powershell`, `vim`, `vscode`, and `zed`. The shell referred to here is **PowerShell 7** from the **Microsoft Store**, not the default Windows PowerShell.
@@ -138,25 +138,16 @@ git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
 cd dotfiles
 ```
 
-### PowerShell and Neovim setup
+### PowerShell setup
 
 Be patient, as this configuration may encounter some issues.
 
 1. Move configuration files to the correct directory:
-
-   - Move the `powershell` folder to `C:/Users/<user_name>/.config` (the same directory as `scoop`):
+   Move the `powershell` folder to `C:/Users/<user_name>/.config` (the same directory as `scoop`):
      ```powershell
      Copy-Item -Path "~/Documents/dotfiles/config/powershell/takuya.omp.json" -Destination "~/.config/powershell/takuya.omp.json" -Force;
      Copy-Item -Path "~/Documents/dotfiles/config/powershell/user_profile.ps1" -Destination "~/.config/powershell/user_profile.ps1" -Force
      ```
-   - Move the `nvim` folder to `$env:LOCALAPPDATA`:
-     ```powershell
-     Copy-Item -Path "~/Documents/dotfiles/config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
-     ```
-
-> [!TIP]
-> If you want to use `dotfiles/config/nvim-josean` as the default **Neovim** configuration, first back up your existing `nvim` folder, then rename `nvim-josean` to `nvim`. Do the same for **Tmux** using `dotfiles/config/tmux-josean`. For **Zed**, swap the names of the two files in `dotfiles/config/zed/` such that the official configuration is in `settings.json`.
-
 2. Set theme and other settings:
 
    Open `settings.json` in **Windows Terminal** settings, remove all current content, then paste the configuration from `dotfiles/config/powershell/settings.json` and save it.
@@ -172,8 +163,16 @@ Be patient, as this configuration may encounter some issues.
    ```powershell
    . $env:USERPROFILE\.config\powershell\user_profile.ps1
    ```
-   Remember to save the file with `:wq` in **Neovim**.
-4. Install `clangd` for `C/C++` coding suggestions:
+   Remember to save this file.
+
+## Neovim setup
+
+1. Move configuration files to the correct directory:
+   Move the `nvim` folder to `$env:LOCALAPPDATA`:
+   ```powershell
+   Copy-Item -Path "~/Documents/dotfiles/config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
+   ```
+2. Install `clangd` for `C/C++` coding suggestions:
 
    Open the **UCRT64** terminal and use this command *(it cannot be pasted, so type it directly in the terminal)*:
    ```bash
@@ -181,10 +180,10 @@ Be patient, as this configuration may encounter some issues.
    ```
 
    Type `y` for all requirements or suggestions.
-5. Download `clangd` for **Neovim**:
+3. Download `clangd` for **Neovim**:
 
    Open **Neovim**, type `:Mason`, then find `clangd` and install it.
-6. Link **Neovim** with `clangd`:
+4. Link **Neovim** with `clangd`:
 
    Although you installed `clangd` through Mason in **Neovim**, the system may still not link to it because of conflicting directory management between **MSYS2** and Windows.
 
@@ -192,6 +191,9 @@ Be patient, as this configuration may encounter some issues.
    ```powershell
    Copy-Item -Path "~/Documents/dotfiles/config/powershell/lsp.lua" -Destination "$env:LOCALAPPDATA/nvim/lua/plugins/lsp.lua" -Force
    ```
+
+> [!TIP]
+> If you want to use `dotfiles/config/nvim-josean` as the default **Neovim** configuration, first back up your existing `nvim` folder, then rename `nvim-josean` to `nvim`. 
 
 ### Vim, Visual Studio Code, and Zed setup
 
@@ -210,3 +212,5 @@ Use commands below to update the configuration files in the system:
   ```powershell
   Copy-Item -Path "~/Documents/dotfiles/config/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
   ```
+> [!TIP]
+> For **Zed**, you can swap the names of the two files in `dotfiles/config/zed/` such that the official configuration is in `settings.json`.
