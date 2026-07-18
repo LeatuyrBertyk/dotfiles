@@ -93,17 +93,20 @@ First, make sure you have downloaded all required tools, packages, and dependenc
 1. Clone the repository:
    ```bash
    cd ~/Documents/ &&
-   git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
-   cd ..
+   git clone https://github.com/LeatuyrBertyk/dotfiles/
    ```
 2. Set executable permission:
    ```bash
-   cd ~/Documents/dotfiles/ && chmod +x install-stow.sh
+   cd ~/Documents/dotfiles/ &&
+   chmod +x install-stow.sh
    ```
 3. Stow all configuration to system:
    ```bash
    ./install-stow.sh
    ```
+
+> [!TIP]
+> If you do not want to stow any configuration, you can change content in `install-stow.sh` file suitable for your purpose before using `./install-stow.sh` command.
 
 > [!WARNING]
 > **GNU Stow** is sensitive, so make sure your personal system configuration files do not already exist before using `./install-stow.sh` to prevent overwriting errors. Typically, those files do not exist on a first-time installation. If they do exist, back them up before running this command.
@@ -131,8 +134,8 @@ Make sure you have downloaded all required tools, packages, and dependencies. Wi
 First, clone the repository:
 ```bash
 cd ~/Documents &&
-Git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
-cd ..
+git clone https://github.com/LeatuyrBertyk/dotfiles/ &&
+cd dotfiles
 ```
 
 ### PowerShell and Neovim setup
@@ -192,16 +195,18 @@ Be patient, as this configuration may encounter some issues.
 
 ### Vim, Visual Studio Code, and Zed setup
 
-Use the command below to update the configuration files in the system:
-```powershell
-# For Vim:
-Copy-Item -Path "~/Documents/dotfiles/config/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force
-Copy-Item -Path "~/Documents/dotfiles/config/vim/vimrc" -Destination "~/.vimrc" -Force
+Use commands below to update the configuration files in the system:
 
-# For VSCode:
-Copy-Item -Path "~/Documents/dotfiles/config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
-
-# For Zed:
-Copy-Item -Path "~/Documents/dotfiles/config/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
-```
-
+- For **Vim**:
+  ```powershell
+  Copy-Item -Path "~/Documents/dotfiles/config/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force;
+  Copy-Item -Path "~/Documents/dotfiles/config/vim/vimrc" -Destination "~/.vimrc" -Force;
+  ```
+- For **VSCode**:
+  ```powershell
+  Copy-Item -Path "~/Documents/dotfiles/config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force;
+  ```
+- For **Zed**:
+  ```powershell
+  Copy-Item -Path "~/Documents/dotfiles/config/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
+  ```
