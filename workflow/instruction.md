@@ -11,7 +11,7 @@ Those content below illustrates some of my skills to boost speed when using work
 ## Tmux
 
 1. Create new session: `ctrl + tc`
-2. Change to other sessions:
+2. Move to other sessions:
    - Previous session: `ctrl + tp`
    - Next session: `ctrl + tn`
    - Detailed session: `ctrl + t<session_id>`
