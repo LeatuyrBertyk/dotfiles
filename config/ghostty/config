@@ -1,4 +1,5 @@
-theme = Solarized Dark Patched
+# theme = "Solarized Dark Patched"
+theme = Solarized Osaka Night
 
 background-opacity = 0.95
 background-blur-radius = 20

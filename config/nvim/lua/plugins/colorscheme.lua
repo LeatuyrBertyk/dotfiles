@@ -16,9 +16,9 @@ return {
 					sidebars = "transparent", -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
 					floats = "transparent",
 				},
-				sidebars = { "qf", "vista_kind", "terminal", "packer" },
-				day_brightness = 0.2, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
-				hide_inactive_statusline = true, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
+				sidebars = { "qf", "helper" },
+				day_brightness = 0.1, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+				hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
 				dim_inactive = true, -- dims inactive windows
 				lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
 				-- Change the "hint" color to the "orange" color, and make the "error" color bright red
