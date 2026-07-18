@@ -4,8 +4,9 @@ Those content below illustrates some of my skills to boost speed when using work
 
 ## Fish shell
 
-1. Type `nvim` or `cd` with shortcut `ctrl + o` to open **fzf** in current directory.
-2. Type `ctrl + r` to open history used commands.
+1. Type `ctrl + o` to open **fzf** in current directory, can use this shortcut with many commands (such as `nvim` or `cd` or `mv`) for personal purpose
+2. Type `ctrl + r` to open history used commands
+
 
 ## Tmux
 
@@ -14,6 +15,7 @@ Those content below illustrates some of my skills to boost speed when using work
    - Previous session: `ctrl + tp`
    - Next session: `ctrl + tn`
    - Detailed session: `ctrl + t<session_id>`
+
 
 ## Neovim
 
