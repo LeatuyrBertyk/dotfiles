@@ -15,18 +15,21 @@ Those content below illustrates some of my skills to boost speed when using work
    - Previous session: `ctrl + tp`
    - Next session: `ctrl + tn`
    - Detailed session: `ctrl + t<session_id>`
-
+3. Split windows in current session:
+   - Right split window: `ctrl + t + |`
+   - Below split window: `ctrl + t + -`
+   - To move between windows: `ctrl + t + <direct>`, where `<direct>` is `h` (left), `l` (right), `k` (up), and `j` (down)
 
 ## Neovim
 
 1. Split windows:
-   - Split tab: `ss`
-   - Vertical split tab: `sv`
+   - Below split tab: `ss`
+   - Right split tab: `sv`
    - New tab: `te`
 
    Then use `space + ff` to search and open file.
 2. Open terminal:
    - Below split terminal: `space + ft` or `Sterm`
-   - Right vertical split terminal: `Vterm`
+   - Right split terminal: `Vterm`
 3. Search content:
    - Search any content in any file in current directory: `space + sg`
