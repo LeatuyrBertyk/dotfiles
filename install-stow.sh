@@ -3,7 +3,7 @@
 # Go to dotfiles directory
 cd ~/Documents/dotfiles/config || exit
 
-# For Zsh:
+# For zsh:
 # If not need, comment two lines below.
 echo "Linking with zsh..."
 stow -t ~ zsh

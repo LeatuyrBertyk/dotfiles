@@ -143,6 +143,7 @@ cd dotfiles
 Be patient, as this configuration may encounter some issues.
 
 1. Move configuration files to the correct directory:
+
    Move the `powershell` folder to `C:/Users/<user_name>/.config` (the same directory as `scoop`):
      ```powershell
      Copy-Item -Path "~/Documents/dotfiles/config/powershell/takuya.omp.json" -Destination "~/.config/powershell/takuya.omp.json" -Force;
@@ -165,9 +166,10 @@ Be patient, as this configuration may encounter some issues.
    ```
    Remember to save this file.
 
-## Neovim setup
+### Neovim setup
 
 1. Move configuration files to the correct directory:
+
    Move the `nvim` folder to `$env:LOCALAPPDATA`:
    ```powershell
    Copy-Item -Path "~/Documents/dotfiles/config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
