@@ -1,4 +1,4 @@
-# Some tip to boost workflow speed
+# Some tips to boost workflow speed
 
 Those content below illustrates some of my skills to boost speed when using workspace.
 
