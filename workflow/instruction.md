@@ -24,7 +24,7 @@ Those content below illustrates some of my skills to boost speed when using work
    - Vertical split tab: `sv`
    - New tab: `te`
 
-   Then use `space + ff` to open file.
+   Then use `space + ff` to search and open file.
 2. Open terminal:
    - Below split terminal: `space + ft` or `Sterm`
    - Right vertical split terminal: `Vterm`
