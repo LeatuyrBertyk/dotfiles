@@ -194,11 +194,14 @@ Be patient, as this configuration may encounter some issues.
 
 Use the command below to update the configuration files in the system:
 ```powershell
+# For Vim:
 Copy-Item -Path "~/Documents/dotfiles/config/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force
 Copy-Item -Path "~/Documents/dotfiles/config/vim/vimrc" -Destination "~/.vimrc" -Force
 
+# For VSCode:
 Copy-Item -Path "~/Documents/dotfiles/config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
 
+# For Zed:
 Copy-Item -Path "~/Documents/dotfiles/config/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
 ```
 
