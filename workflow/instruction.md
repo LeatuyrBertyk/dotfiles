@@ -23,6 +23,7 @@ Those content below illustrates some of my skills to boost speed when using work
    - Split tab: `ss`
    - Vertical split tab: `sv`
    - New tab: `te`
+
    Then use `space + ff` to open file.
 2. Open terminal:
    - Below split terminal: `space + ft` or `Sterm`
