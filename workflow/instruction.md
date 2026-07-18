@@ -1,6 +1,6 @@
 # Some tips to boost workflow speed
 
-Those content below illustrates some of my skills to boost speed when using workspace.
+This file illustrates my skills to boost speed when using workspace on macOS and Linux.
 
 ## Fish shell
 
