@@ -88,7 +88,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
 > [!IMPORTANT]
 > Available for all **EXCEPT** `dotfiles/.config/powershell`.
 
-First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple installation flow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for details:
+First of all, make sure you have downloaded all needed tools, packages and dependencies. Then, to make a simple installation flow, you should use [GNU Stow](https://github.com/aspiers/stow) tool to automatically link configuration in dotfiles directly to system. Follow below steps for detail:
 
 1. Clone the repository:
 
@@ -123,7 +123,7 @@ After stowing this configuration, when opening terminal, you can see the **Fish*
    In each step, you can choose any choice that you like. Then type `y` at last to accept all changes. Besides, my theme is followed this chain: `2 1 3 3 1 1 4 2 1 2 3 2 1 2` and `y` at the end.
 
 > [!TIP]
-> If you want to use `dotfiles/config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`; and get the same manipulation with `dotfiles/config/tmux-josean`. In addition, with **Zed**, you can swap names of two files in `dotfiles/config/zed/` such that the official configuration is in file `settings.json`.
+> If you want to use `dotfiles/config/nvim-josean` as default **Neovim** configuration, first make a back-up (rename) for `nvim`, then rename `nvim-josean` to `nvim`. Get the same manipulation with $$Tmux$$ in `dotfiles/config/tmux-josean`. In addition, with **Zed**, you can swap names of two `.json` files in `dotfiles/config/zed/` such that the official configuration is in file `settings.json`.
 
 ## Powershell setup (Windows)
 
