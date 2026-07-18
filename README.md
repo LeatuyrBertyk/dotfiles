@@ -109,7 +109,7 @@ First of all, make sure you have downloaded all needed tools, packages and depen
    ```
 
 > [!WARNING]
-> **GNU Stow** is very sensitive, so make sure that your config files do not exist before using `./install-stow.sh`. To prevent risks, you can make back-up folders for your config before using this command.*
+> **GNU Stow** is very sensitive, so make sure that your personal system config files do not exist before using `./install-stow.sh` as to prevent overwritting errors. Typically, those system config files do not exist for first time installation. However, if existed, to prevent risks, you can make back-up folders for your config before using this command.*
 
 After stowing this configuration, when opening terminal, you can see the **Fish** theme is very simple. The reason is that `tide` plugin is not started up, so you should follow some more steps below:
 
