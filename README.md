@@ -10,7 +10,7 @@ My workspace is created based on [craftzdog/dotfiles-public](https://github.com/
 
 I almost use Ubuntu OS for default workspace as its versatility, with main tools:
 
-- **Ghostty** - Default terminal
+- **Kitty** and **Ghostty** - Default terminal, I almost use Kitty
 - **tmux** - Terminal multiplexer
 - **yazi** - Terminal file manager
 - **Fish** - Default shell, convenience but has a weird configuration method
@@ -44,8 +44,8 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
   - **find files**: [fd](https://github.com/sharkdp/fd)
 - a terminal that support true color and *undercurl*:
-  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended)
-  - [Kitty](https://github.com/kovidgoyal/kitty) ***(Linux & Macos)***
+  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended for maxcOS)
+  - [Kitty](https://github.com/kovidgoyal/kitty) ***(Linux & Macos)*** (recommended for Linux)
   - [Wezterm](https://github.com/wez/wezterm) ***(Linux, Macos & Windows)***
   - [Alacritty](https://github.com/alacritty/alacritty) ***(Linux, Macos & Windows)***
   - [iterm2](https://iterm2.com/) ***(Macos)***
