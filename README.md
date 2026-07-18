@@ -44,7 +44,7 @@ I almost use Ubuntu OS for default workspace as its versatility, with main tools
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
   - **find files**: [fd](https://github.com/sharkdp/fd)
 - a terminal that support true color and *undercurl*:
-  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended for maxcOS)
+  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended for macOS)
   - [Kitty](https://github.com/kovidgoyal/kitty) ***(Linux & Macos)*** (recommended for Linux)
   - [Wezterm](https://github.com/wez/wezterm) ***(Linux, Macos & Windows)***
   - [Alacritty](https://github.com/alacritty/alacritty) ***(Linux, Macos & Windows)***
