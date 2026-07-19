@@ -122,11 +122,12 @@ After stowing the configuration, your **Fish** theme may appear very simple beca
    Choose the options you want at each step, then type `y` at the end to accept the changes. My theme choices were: `2 1 3 3 1 1 4 2 1 2 3 2 1 2`, followed by `y`.
 
 ***(Optional)***
+
 6. **Kitty** theme configuration:
+
    ```bash
    kitty +kitten themes Solarized\ Osaka
    ```
-
 
 > [!TIP]
 > If you want to use `dotfiles/config/nvim-josean` as the default **Neovim** configuration, first back up your existing `nvim` folder, then rename `nvim-josean` to `nvim`. Do the same for **Tmux** using `dotfiles/config/tmux-josean`. For **Zed**, swap the names of the two `.json` files in `dotfiles/config/zed/` such that the official configuration is in `settings.json`.
