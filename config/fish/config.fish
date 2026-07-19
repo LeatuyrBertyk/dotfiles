@@ -14,6 +14,7 @@ alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
+alias fd fdfind
 alias build "time g++ main.cpp -g -o run.exe"
 alias buildlray "gcc main.c -o app -lraylib -lGL -lm -lpthread -ldl -lrt -lX11"
 alias app "./app"
@@ -60,3 +61,5 @@ set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 if test -f $LOCAL_CONFIG
     source $LOCAL_CONFIG
 end
+
+# Theme

@@ -98,11 +98,11 @@ First, make sure you have downloaded all required tools, packages, and dependenc
 2. Set executable permission:
    ```bash
    cd ~/Documents/dotfiles/ &&
-   chmod +x install-stow.sh
+   chmod +x install-macos-linux.sh
    ```
 3. Stow all configuration to system:
    ```bash
-   ./install-stow.sh
+   ./install-macos-linux.sh
    ```
 
 > [!TIP]
