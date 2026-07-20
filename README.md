@@ -88,7 +88,7 @@ I primarily use Ubuntu as my default environment because of its versatility. Mai
 ## macOS & Linux setup
 
 > [!IMPORTANT]
-> Available for all except `config/powershell`.
+> Available for all **EXCEPT** `config/powershell`.
 
 First, make sure you have downloaded all required tools, packages, and dependencies. Then, to simplify installation, use [GNU Stow](https://github.com/aspiers/stow) to automatically link configuration files from this repository to your system. Follow the steps below:
 
@@ -124,7 +124,7 @@ After stowing the configuration, your **Fish** theme may appear very simple beca
    Choose the options you want at each step, then type `y` at the end to accept the changes. My theme choices were: `2 1 3 3 1 1 4 2 1 2 3 2 1 2`, followed by `y`.
 
 > [!TIP]
-> If you want to use `config/nvim-josean` as the default **Neovim** configuration, first rename `config/nvim` to another name (for example, `config/nvim-craftzdog`), rename `config/nvim-josean` to `config/nvim`, then perform step 3. Do the same for **Tmux** by renaming `config/tmux-josean`.
+> If you want to use `config/nvim-josean` as the default **Neovim** configuration, first rename `config/nvim` to another name (for example, `config/nvim-craftzdog`), rename `config/nvim-josean` to `config/nvim`, then stowing. Do the same for **Tmux** by renaming `config/tmux-josean`.
 
 > [!TIP]
 > Linux and macOS are ideal environments for coding. So for `C/C++` support in **Neovim**, you only need to type `:Mason`, search `clangd` and install it.
@@ -153,7 +153,7 @@ These configurations are optional; use them only when the corresponding tools ar
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    ```
 
-   Then open **Vim** and type `:PlugInstall` to install all plugins listed in `vim/.vimrc.plug`. You may see an alert about a missing theme. Do not worry; press `Enter` to accept it, then reopen **Vim** and the theme will update.
+   Then open **Vim** and type `:PlugInstall` to install all plugins listed in `config/vim/.vimrc.plug`. You may see an alert about a missing theme. Do not worry; press `Enter` to accept it, then reopen **Vim** and the theme will update.
 
 3. For **VSCode**:
 
@@ -167,7 +167,7 @@ These configurations are optional; use them only when the corresponding tools ar
 
 4. For **Zed**:
 
-   You can swap the names of the two `.json` files in `dotfiles/config/zed/` so that the official configuration is in `settings.json`; do this before stowing.
+   You can swap the names of the two `.json` files in `config/zed/` so that the official configuration is in `settings.json`; do this before stowing.
 
 ## Windows setup
 
@@ -200,7 +200,7 @@ Be patient and careful; this process may encounter issues.
 
 2. Set theme and other settings:
 
-   Open `settings.json` in **Windows Terminal** settings, remove all current content, then paste the configuration from `dotfiles/config/powershell/settings.json` and save it.
+   Open `settings.json` in **Windows Terminal** settings, remove all current content, then paste the configuration from `config/powershell/settings.json` and save it.
 
    _Note: perform this step manually because the exact directory of `settings.json` depends on the version of the app installed. This is one of the drawbacks of using Windows._
 
@@ -226,7 +226,7 @@ Copy-Item -Path "~/Documents/dotfiles/config/nvim/*" -Destination "$env:LOCALAPP
 ```
 
 > [!TIP]
-> If you want to use `config/nvim-josean` as the default **Neovim** configuration, first rename `config/nvim` to another name (for example, `config/nvim-craftzdog`), rename `config/nvim-josean` to `config/nvim`, then perform step 1. Do the same for **Tmux** by renaming `config/tmux-josean`.
+> If you want to use `config/nvim-josean` as the default **Neovim** configuration, first rename `config/nvim` to another name (for example, `config/nvim-craftzdog`), rename `config/nvim-josean` to `config/nvim`, then perform above step.
 
 The steps below are optional; use them only if you need `C/C++` support.
 
@@ -254,7 +254,7 @@ The steps below are optional; use them only if you need `C/C++` support.
 
 ### Optional setup for Vim, Visual Studio Code, and Zed
 
-These configurations are optional; use them only when the corresponding tools are stowed.
+These configurations are optional.
 
 1. For **Vim**:
    ```powershell
@@ -268,7 +268,7 @@ These configurations are optional; use them only when the corresponding tools ar
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    ```
 
-   Then open **Vim** and type `:PlugInstall` to install all plugins listed in `vim/.vimrc.plug`. You may see an alert about a missing theme. Do not worry; press `Enter` to accept it, then reopen **Vim** and the theme will update.
+   Then open **Vim** and type `:PlugInstall` to install all plugins listed in `config.vim/.vimrc.plug`. You may see an alert about a missing theme. Do not worry; press `Enter` to accept it, then reopen **Vim** and the theme will update.
 
 2. For **VSCode**:
    ```powershell
@@ -298,4 +298,4 @@ These configurations are optional; use them only when the corresponding tools ar
    Copy-Item -Path "~/Documents/dotfiles/config/zed/settings.json" -Destination "$env:APPDATA\Zed\settings.json" -Force
    ```
 
-   You can swap the names of the two files in `config/zed/` so that the official configuration is in `settings.json`; do this before performing step 3.
+   You can swap the names of the two files in `config/zed/` so that the official configuration is in `settings.json`; do this before performing above step.
