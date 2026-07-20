@@ -1,35 +1,35 @@
 # Some tips to boost workflow speed
 
-This file illustrates my skills to boost speed when using workspace on macOS and Linux.
+This file shows shortcuts and techniques to speed up workflows on macOS and Linux.
 
 ## Fish shell
 
-1. Type `ctrl + o` to open **fzf** in current directory, can use this shortcut with many commands (such as `nvim` or `cd` or `mv`) for personal purpose
-2. Type `ctrl + r` to open history used commands
-
+1. Type `ctrl + o` to open **fzf** in the current directory. You can use this shortcut with many commands (such as `nvim`, `cd`, or `mv`).
+2. Type `ctrl + r` to open the command history.
 
 ## Tmux
 
-1. Create new session: `ctrl + tc`
-2. Move to other sessions:
+1. Create a new session: `ctrl + tc`
+2. Switch between sessions:
    - Previous session: `ctrl + tp`
    - Next session: `ctrl + tn`
-   - Detailed session: `ctrl + t<session_id>`
-3. Split windows in current session:
-   - Right split window: `ctrl + t + |`
-   - Below split window: `ctrl + t + -`
-   - To move between windows: `ctrl + t + <direct>`, where `<direct>` is `h` (left), `l` (right), `k` (up), and `j` (down)
+   - Specific session: `ctrl + t<session_id>` *(`<session_id` could be `0`, `1`, `2`,...)*
+3. Split panes in the current session:
+   - Vertical split: `ctrl + t + |`
+   - Horizontal split: `ctrl + t + -`
+   - Move between panes: `ctrl + t + <direction>`, where `<direction>` is `h` (left), `l` (right), `k` (up), and `j` (down)
 
 ## Neovim
 
 1. Split windows:
-   - Below split tab: `ss`
-   - Right split tab: `sv`
+   - Horizontal split: `ss`
+   - Vertical split: `sv`
    - New tab: `te`
 
-   Then use `space + ff` to search and open file.
-2. Open terminal:
-   - Below split terminal: `space + ft` or `Sterm`
-   - Right split terminal: `Vterm`
+   Then use `space + ff` to search for and open a file.
+
+2. Open a terminal:
+   - Horizontal split terminal: `space + ft` or `Sterm`
+   - Vertical split terminal: `Vterm`
 3. Search content:
-   - Search any content in any file in current directory: `space + sg`
+   - Search any content in any file in the current directory: `space + sg`

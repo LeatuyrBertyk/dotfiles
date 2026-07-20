@@ -63,9 +63,13 @@ if test -f $LOCAL_CONFIG
 end
 
 set -gx FZF_DEFAULT_OPTS "
-    --layout=reverse \
-    --info=inline \
-    --multi \
-    --bind 'ctrl-d:page-down' \
-    --bind 'ctrl-u:page-up' \
+  --layout=reverse \
+  --info=inline \
+  --multi \
+  --bind 'ctrl-d:page-down' \
+  --bind 'ctrl-u:page-up' \
+  --bind alt-j:preview-down \
+  --bind alt-k:preview-up \
+  --bind alt-h:preview-left \
+  --bind alt-l:preview-right \
 "
