@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Extension list
+# Required extension list
 extensions=(
   "eamodio.gitlens"
   "esbenp.prettier-vscode"
