@@ -8,13 +8,13 @@ My workspace is based on [craftzdog/dotfiles-public](https://github.com/craftzdo
 
 ## Main workspace
 
-I primarily use Ubuntu as my default workspace because of its versatility. Main tools:
+I primarily use Ubuntu as my default environment because of its versatility. Main tools include:
 
-- **Kitty** and **Ghostty** - Default terminal; I usually use Kitty
+- **Kitty** and **Ghostty** - Default terminal emulators; I usually use Kitty.
 - **tmux** - Terminal multiplexer
 - **yazi** - Terminal file manager
 - **Fish** - Default shell; convenient, but uses a unique configuration style
-- **Neovim** - Default text editor; Lazy.nvim is the core structure
+- **Neovim** - Default text editor; built around Lazy.nvim.
 - **Visual Studio Code** - Another code editor suitable for collaboration or large projects
 - **Zed** - New AI code editor, suitable for **Quarto**
 - **Git** - Project version control system
@@ -34,7 +34,7 @@ I primarily use Ubuntu as my default workspace because of its versatility. Main 
 - [LazyVim](https://www.lazyvim.org/)
 - Git >=**2.19.0**
 - [lazygit](https://github.com/jesseduffield/lazygit)
-- [Nodejs](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en)
 - [yazi](https://github.com/sxyazi/yazi)
 - [Visual Studio Code](https://code.visualstudio.com/) ***(optional)***
 - [Zed](https://zed.dev/) ***(optional)***
@@ -44,11 +44,11 @@ I primarily use Ubuntu as my default workspace because of its versatility. Main 
   - **live grep**: [ripgrep](https://github.com/BurntSushi/ripgrep)
   - **find files**: [fd](https://github.com/sharkdp/fd)
 - a terminal that supports true color and *undercurl*:
-  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & Macos)*** (recommended for macOS)
-  - [Kitty](https://github.com/kovidgoyal/kitty) ***(Linux & Macos)*** (recommended for Linux)
-  - [Wezterm](https://github.com/wez/wezterm) ***(Linux, Macos & Windows)***
-  - [Alacritty](https://github.com/alacritty/alacritty) ***(Linux, Macos & Windows)***
-  - [iterm2](https://iterm2.com/) ***(Macos)***
+  - [Ghostty](https://github.com/ghostty-org/ghostty) ***(Linux & macOS)*** (recommended for macOS)
+  - [Kitty](https://github.com/kovidgoyal/kitty) ***(Linux & macOS)*** (recommended for Linux)
+  - [Wezterm](https://github.com/wez/wezterm) ***(Linux, macOS & Windows)***
+  - [Alacritty](https://github.com/alacritty/alacritty) ***(Linux, macOS & Windows)***
+  - [iterm2](https://iterm2.com/) ***(macOS)***
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [Solarized Osaka](https://github.com/craftzdog/solarized-osaka.nvim)
 - [Fish shell](https://fishshell.com/)
@@ -67,7 +67,7 @@ I primarily use Ubuntu as my default workspace because of its versatility. Main 
 - [LazyVim](https://www.lazyvim.org/)
 - Git >=**2.19.0**
 - [lazygit](https://github.com/jesseduffield/lazygit)
-- [Nodejs](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en)
 - [Visual Studio Code](https://code.visualstudio.com/) ***(optional)***
 - [Zed](https://zed.dev/) ***(optional)***
 - [Vim](https://www.vim.org/) ***(optional)***
@@ -97,7 +97,7 @@ First, make sure you have downloaded all required tools, packages, and dependenc
    ```
 2. Set executable permission:
    ```bash
-   cd ~/Documents/dotfiles/ &&
+   cd ~/Documents/dotfiles/scripts/ &&
    chmod +x install-macos-linux.sh
    ```
 3. Stow all configuration to system:
@@ -106,7 +106,7 @@ First, make sure you have downloaded all required tools, packages, and dependenc
    ```
 
 > [!TIP]
-> If you do not want to stow any configuration, you can change content in `install-stow.sh` file suitable for your purpose before using `./install-stow.sh` command.
+> If you do not want to stow any configuration, edit `install-stow.sh` to suit your needs before using `./install-stow.sh`.
 
 > [!WARNING]
 > **GNU Stow** is sensitive, so make sure your personal system configuration files do not already exist before using `./install-stow.sh` to prevent overwriting errors. Typically, those files do not exist on a first-time installation. If they do exist, back them up before running this command.
@@ -131,6 +131,14 @@ After stowing the configuration, your **Fish** theme may appear very simple beca
 
 > [!TIP]
 > If you want to use `dotfiles/config/nvim-josean` as the default **Neovim** configuration, first back up your existing `nvim` folder, then rename `nvim-josean` to `nvim`. Do the same for **Tmux** using `dotfiles/config/tmux-josean`. For **Zed**, swap the names of the two `.json` files in `dotfiles/config/zed/` such that the official configuration is in `settings.json`.
+
+> [!TIP]
+> **VSCode** will not apply new configuration if required extensions have not been installed, because the app does not have a mechanism to automatically install extensions referenced in `settings.json`. So after stowing `settings.json` for **VSCode**, use the command below to install the required extensions:
+```bash
+cd ~/Documents/dotfiles/scripts &&
+chmod +x install-vscode-extensions.sh &&
+./install-vscode-extensions.sh
+```
 
 ## Windows setup
 
