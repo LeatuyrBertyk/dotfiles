@@ -258,8 +258,8 @@ These configurations are optional; use them only when the corresponding tools ar
 
 1. For **Vim**:
    ```powershell
-   Copy-Item -Path "~/Documents/dotfiles/config/vim/.vimrc.plug" -Destination "~/.vimrc.plug" -Force;
-   Copy-Item -Path "~/Documents/dotfiles/config/vim/vimrc" -Destination "~/.vimrc" -Force;
+   Copy-Item -Path "~/Documents/dotfiles/config/vim/vimrc" -Destination "~/vim/vimrc" -Force;
+   Copy-Item -Path "~/Documents/dotfiles/config/vim/.vimrc.plug" -Destination "~/vim/.vimrc.plug" -Force
    ```
 
    To enable plugins in **Vim**, download `vim-plug` using the command below:
@@ -272,7 +272,7 @@ These configurations are optional; use them only when the corresponding tools ar
 
 2. For **VSCode**:
    ```powershell
-   Copy-Item -Path "~/Documents/dotfiles/config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force;
+   Copy-Item -Path "~/Documents/dotfiles/config/vscode/settings.json" -Destination "$env:APPDATA\Code\User\settings.json" -Force
    ```
 
    However, **VSCode** will not apply new configuration if required extensions have not been installed, because the app does not have a mechanism to automatically install extensions referenced in `settings.json`. Follow the steps below:
