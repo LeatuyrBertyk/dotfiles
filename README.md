@@ -184,7 +184,7 @@ cd dotfiles
 ```
 
 > [!IMPORTANT]
-> You should configure `powershell` and `nvim` for a complete experience.
+> You need to configure `config/powershell` and `nvim` for a complete experience.
 
 ### PowerShell setup
 
