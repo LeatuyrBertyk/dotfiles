@@ -220,19 +220,17 @@ Be patient and careful; this process may encounter issues.
 
 ### Neovim setup
 
-1. Move configuration files to the correct directory:
-
-   Move the `config/nvim` folder to `$env:LOCALAPPDATA`:
-   ```powershell
-   Copy-Item -Path "~/Documents/dotfiles/config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
-   ```
+Move the `config/nvim` folder to `$env:LOCALAPPDATA`:
+```powershell
+Copy-Item -Path "~/Documents/dotfiles/config/nvim/*" -Destination "$env:LOCALAPPDATA/nvim" -Recurse -Force
+```
 
 > [!TIP]
 > If you want to use `config/nvim-josean` as the default **Neovim** configuration, first rename `config/nvim` to another name (for example, `config/nvim-craftzdog`), rename `config/nvim-josean` to `config/nvim`, then perform step 1. Do the same for **Tmux** by renaming `config/tmux-josean`.
 
 The steps below are optional; use them only if you need `C/C++` support.
 
-2. Install `clangd` for `C/C++` coding suggestions:
+1. Install `clangd` for `C/C++` coding suggestions:
 
    Open the **UCRT64** terminal and use this command _(it cannot be pasted, so type it directly in the terminal)_:
    ```bash
@@ -241,11 +239,11 @@ The steps below are optional; use them only if you need `C/C++` support.
 
    Type `y` for all requirements or suggestions.
 
-3. Download `clangd` for **Neovim**:
+2. Download `clangd` for **Neovim**:
 
    Open **Neovim**, type `:Mason`, then find `clangd` and install it.
 
-4. Link **Neovim** with `clangd`:
+3. Link **Neovim** with `clangd`:
 
    Although you installed `clangd` through Mason in **Neovim**, the system may still not link to it because of conflicting directory management between **MSYS2** and Windows.
 
