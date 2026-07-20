@@ -41,5 +41,12 @@ command! -nargs=1 SS rightbelow split <args>
 command! Vterm rightbelow vertical terminal
 command! Sterm rightbelow terminal
 
-set runtimepath^=~/.vim
-source ~/.config/vim/.vimrc.plug
+if has('unix')
+    " Linux / macOS
+    set runtimepath^=~/.vim
+    source ~/.config/vim/.vimrc.plug
+elseif has('win32') || has('win64')
+    " Windows
+    set runtimepath^=~/.vim
+    source ~/.config/.vimrc.plug
+endif
