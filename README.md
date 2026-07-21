@@ -150,8 +150,7 @@ These configurations are optional; use them only when the corresponding tools ar
 
    To enable plugins in **Vim**, download `vim-plug` using the command below:
    ```bash
-   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    ```
 
    Then open **Vim** and type `:PlugInstall` to install all plugins listed in `config/vim/.vimrc.plug`. You may see an alert about a missing theme. Do not worry; press `Enter` to accept it, then reopen **Vim** and the theme will update.
@@ -281,8 +280,7 @@ These configurations are optional.
 
    To enable plugins in **Vim**, download `vim-plug` using the command below:
    ```powershell
-   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
    ```
 
    Then open **Vim** and type `:PlugInstall` to install all plugins listed in `config.vim/.vimrc.plug`. You may see an alert about a missing theme. Do not worry; press `Enter` to accept it, then reopen **Vim** and the theme will update.
