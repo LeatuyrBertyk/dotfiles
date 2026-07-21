@@ -130,7 +130,7 @@ After stowing the configuration, your **Fish** theme may appear very simple beca
 > [!TIP]
 > Linux and macOS are ideal environments for coding. So for `C/C++` support in **Neovim**, you only need to type `:Mason`, search `clangd` and install it.
 
-### Optional setup for Kitty, Vim, VSCode, Zed, and Zsh
+### Optional setup for Kitty, Vim, VSCode, Zed, and zsh
 
 These configurations are optional; use them only when the corresponding tools are stowed.
 
