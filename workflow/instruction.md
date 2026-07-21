@@ -33,3 +33,6 @@ This file shows shortcuts and techniques to speed up workflows on macOS and Linu
    - Vertical split terminal: `Vterm`
 3. Search content:
    - Search any content in any file in the current directory: `space + sg`
+4. Cursor:
+   - When typing an uncompleted keyword, **Neovim** will show a suggestion list, use `ctrl + n` to switch to next and `ctrl + p` to previous.
+   - In a line, use `0` to cursor to the start of current line and `shift + 4` to cursor to the end.
