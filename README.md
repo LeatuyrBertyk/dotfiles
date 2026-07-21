@@ -56,11 +56,12 @@ I primarily use Ubuntu as my default environment because of its versatility. Mai
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts for development use; I use [PlemolJP](https://github.com/yuru7/PlemolJP) and [BlexMono](https://www.nerdfonts.com/font-downloads)
 - [z for fish](https://github.com/jethrokuan/z) - Directory jumping
+- [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) - Default Unix shell **_(optional)_**
 - [Eza](https://github.com/eza-community/eza) - `ls` replacement
 - [ghq](https://github.com/x-motemen/ghq) - Local Git repository organizer
 - [fzf](https://github.com/PatrickF1/fzf.fish) - Interactive filtering
 - [bat](https://github.com/sharkdp/bat) - Better `cat`
-- [curl](https://curl.se/) - Command-line tool for transferring data with URLs.
+- [curl](https://curl.se/) - Command-line tool for transferring data with URLs
 
 ### PowerShell setup (Windows)
 
@@ -83,7 +84,7 @@ I primarily use Ubuntu as my default environment because of its versatility. Mai
 - [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
 - [z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - [PSFzf](https://github.com/kelleyma49/PSFzf) - Fuzzy finder
-- [curl](https://curl.se/) - Command-line tool for transferring data with URLs.
+- [curl](https://curl.se/) - Command-line tool for transferring data with URLs
 
 ## macOS & Linux setup
 
@@ -129,7 +130,7 @@ After stowing the configuration, your **Fish** theme may appear very simple beca
 > [!TIP]
 > Linux and macOS are ideal environments for coding. So for `C/C++` support in **Neovim**, you only need to type `:Mason`, search `clangd` and install it.
 
-### Optional setup for Kitty, Vim, VSCode, and Zed
+### Optional setup for Kitty, Vim, VSCode, Zed, and Zsh
 
 These configurations are optional; use them only when the corresponding tools are stowed.
 
@@ -168,6 +169,22 @@ These configurations are optional; use them only when the corresponding tools ar
 4. For **Zed**:
 
    You can swap the names of the two `.json` files in `config/zed/` so that the official configuration is in `settings.json`; do this before stowing.
+
+5. For **zsh**:
+
+   Download **Oh My Zsh** for plugin manager:
+   ```bash
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
+   Download **Powerlevel10k** as **Zsh** theme:
+   ```bash
+   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   ```
+   Using command below to customize **Zsh** theme:
+   ```bash
+   p10k configure
+   ```
+   Choose the options you want at each step.
 
 ## Windows setup
 
