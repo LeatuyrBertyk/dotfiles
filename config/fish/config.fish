@@ -70,6 +70,4 @@ set -gx FZF_DEFAULT_OPTS "
   --bind 'ctrl-u:page-up' \
   --bind alt-j:preview-down \
   --bind alt-k:preview-up \
-  --bind alt-h:preview-left \
-  --bind alt-l:preview-right \
 "
