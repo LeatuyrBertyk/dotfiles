@@ -71,3 +71,16 @@ set -gx FZF_DEFAULT_OPTS "
   --bind alt-j:preview-down \
   --bind alt-k:preview-up \
 "
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/leatuyrbertyk/miniconda3/bin/conda
+    eval /home/leatuyrbertyk/miniconda3/bin/conda "shell.fish" hook $argv | source
+else
+    if test -f "/home/leatuyrbertyk/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/home/leatuyrbertyk/miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH /home/leatuyrbertyk/miniconda3/bin $PATH
+    end
+end
+# <<< conda initialize <<<
