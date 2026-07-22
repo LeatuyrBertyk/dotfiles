@@ -1,57 +1,62 @@
 {
   "editor.wordWrap": "on",
-  "files.autoSave": "onFocusChange",
-  "workbench.editorAssociations": {
-    "*.exe": "default",
-  },
-  "editor.fontFamily": "'Hack Nerd Font'",
-  "editor.fontLigatures": true,
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-  },
-  "editor.formatOnType": true,
-  "C_Cpp.clang_format_fallbackStyle": "Google",
-  "workbench.colorTheme": "Pace Dark",
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-  },
-  "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
-  "editor.codeActionsOnSave": {},
-  "window.zoomLevel": 0.6,
-  "editor.fontSize": 13,
-  "workbench.activityBar.location": "top",
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "window.zoomLevel": 1.2,
+  "editor.minimap.showSlider": "always",
+  "editor.tokenColorCustomizations": {
+    "comments": {
+      "fontStyle": "italic"
+    }
+  },
+  "windows.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  // "workbench.activityBar.location": "top",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionOnSave": {},
+  "files.autoSave": "onFocusChange",
+  "editor.fontFamily": "HackNerdFont",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontFamily": "PlemolJP Console NF",
+  "terminal.integrated.fontSize": 15,
+  "editor.fontLigatures": true,
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash",
-      "icon": "terminal-bash",
+      "icon": "terminal-bash"
     },
     "zsh": {
-      "path": "zsh",
+      "path": "zsh"
     },
     "fish": {
-      "path": "fish",
+      "path": "fish"
     },
     "tmux": {
       "path": "tmux",
-      "icon": "terminal-tmux",
+      "icon": "terminal-tmux"
     },
     "pwsh": {
       "path": "pwsh",
-      "icon": "terminal-powershell",
-    },
+      "icon": "terminal-powershell"
+    }
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "workbench.editor.Associations": {
+    "*.exe": "default"
   },
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "git.enableSmartCommit": true,
   "git.autofetch": true,
-  "workbench.iconTheme": "symbols",
-  "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
-  "editor.minimap.showSlider": "always",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
