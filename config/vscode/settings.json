@@ -49,8 +49,6 @@
   "workbench.editor.Associations": {
     "*.exe": "default"
   },
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "github.copilot.enable": {
@@ -58,5 +56,6 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "workbench.activityBar.location": "top"
 }
