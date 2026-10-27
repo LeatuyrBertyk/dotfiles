@@ -1,7 +1,7 @@
 {
   "editor.wordWrap": "on",
   "editor.lineNumbers": "relative",
-  "window.zoomLevel": 1.2,
+  "window.zoomLevel": 0.1,
   "editor.minimap.showSlider": "always",
   "editor.tokenColorCustomizations": {
     "comments": {
@@ -16,9 +16,9 @@
   "editor.codeActionOnSave": {},
   "files.autoSave": "onFocusChange",
   "editor.fontFamily": "HackNerdFont",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "terminal.integrated.fontFamily": "PlemolJP Console NF",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 14,
   "editor.fontLigatures": true,
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -57,5 +57,4 @@
     "markdown": false,
     "scminput": false
   },
-  "workbench.activityBar.location": "top"
 }
