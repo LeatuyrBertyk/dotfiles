@@ -59,4 +59,5 @@
   },
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Pace Dark",
+  "chat.viewSessions.orientation": "stacked",
 }
