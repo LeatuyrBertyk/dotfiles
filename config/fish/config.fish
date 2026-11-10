@@ -24,7 +24,7 @@ alias cmbuild 'mkdir -p build && cd build && cmake .. && cmake --build . && cd .
 alias cmrun build/bin/app
 alias python python3
 alias y yazi
-alias g git
+alias g lazygit
 alias c claude
 alias claude-yolo "claude --dangerously-skip-permissions"
 alias drp "sudo docker run --name postgres-1 -v (pwd):/app -w /app -e POSTGRES_PASSWORD=mysecret -d -p 5432:5432 postgres:16-alpine"
