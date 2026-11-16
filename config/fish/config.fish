@@ -30,6 +30,7 @@ alias claude-yolo "claude --dangerously-skip-permissions"
 alias drp "sudo docker run --name postgres-1 -v (pwd):/app -w /app -e POSTGRES_PASSWORD=mysecret -d -p 5432:5432 postgres:16-alpine"
 alias dpsql "sudo docker exec -it postgres-1 psql -U postgres"
 alias rundpsql "sudo docker exec -i postgres-1 psql -U postgres -f"
+alias pandocmd "pandoc main.md -o main.pdf --pdf-engine-xelatex -V mainfont="Dejavu Serif" "
 
 # command -qv nvim && alias vim nvim
 set -gx EDITOR nvim
