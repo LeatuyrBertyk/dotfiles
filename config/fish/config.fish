@@ -31,10 +31,6 @@ alias drp "sudo docker run --name postgres-1 -v (pwd):/app -w /app -e POSTGRES_P
 alias dpsql "sudo docker exec -it postgres-1 psql -U postgres"
 alias rundpsql "sudo docker exec -i postgres-1 psql -U postgres -f"
 
-function pandocmd
-    pandoc main.md -o main.pdf --pdf-engine=xelatex -V geometry:"top=3cm, bottom=3cm, left=3cm, right=3cm" -V mainfont="Arial" $argv
-end
-
 # command -qv nvim && alias vim nvim
 set -gx EDITOR nvim
 
