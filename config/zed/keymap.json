@@ -1,0 +1,73 @@
+[
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+      "space e": "project_panel::ToggleFocus",
+      "+": "vim::Increment",
+      "-": "vim::Decrement",
+      "s s": "pane::SplitDown",
+      "s v": "pane::SplitRight",
+      "s h": "workspace::ActivatePaneLeft",
+      "s k": "workspace::ActivatePaneUp",
+      "s j": "workspace::ActivatePaneDown",
+      "s l": "workspace::ActivatePaneRight",
+      "ctrl-w left": "vim::ResizePaneLeft",
+      "ctrl-w right": "vim::ResizePaneRight",
+      "ctrl-w up": "vim::ResizePaneUp",
+      "ctrl-w down": "vim::ResizePaneDown",
+      "ctrl-j": "editor::GoToDiagnostic",
+      "; f": "file_finder::Toggle",
+      "; r": "pane::DeploySearch",
+      "\\ \\": "tab_switcher::Toggle",
+      "; e": "diagnostics::Deploy",
+      "; s": "outline::Toggle",
+      "; t": "command_palette::Toggle",
+      "s f": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "project_panel::ToggleFocus",
+      "space s f": "project_panel::ToggleFocus",
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !menu",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "VimControl && !menu || EmptyPane",
+    "bindings": {
+      "s": null,
+      "space": null,
+      "space s f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "VimControl && !menu || EmptyPane",
+    "bindings": {
+      "s": null,
+      "space": null,
+      "space s t": "terminal_panel::ToggleFocus",
+      "space v t": "workspace::NewCenterTerminal"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "space s t": "terminal_panel::ToggleFocus"
+    }
+  }
+]
