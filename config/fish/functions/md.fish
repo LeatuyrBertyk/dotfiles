@@ -1,21 +1,32 @@
 function md --description "Build and live preview Markdown"
-    set -l file $argv[1]
+    set -l file (realpath "$argv[1]")
 
-    if test -z "$file"; or not test -f "$file"
-        echo "Command: md <file.md>"
+    if test -z "$argv[1]"; or not test -f "$file"
+        echo "Command: mdpreview <file.md>"
         return 1
     end
 
+    set -l dir (dirname "$file")
+    set -l name (basename "$file")
     set -l pdf_out (path change-extension .pdf "$file")
+    set -l pdf_tmp "$pdf_out.tmp.pdf"
 
-    echo "Compiling $file -> $pdf_out..."
+    echo "Compiling $name..."
     pandoc "$file" -o "$pdf_out" --pdf-engine=xelatex -V geometry:"top=3cm, bottom=3cm, left=3cm, right=3cm" -V mainfont="Arial" $argv
 
     evince "$pdf_out" >/dev/null 2>&1 &
     set -l viewer_pid $last_pid
 
-    trap "kill $viewer_pid 2>/dev/null; echo '\nStop supervising.'" EXIT INT TERM
+    trap "kill $viewer_pid 2>/dev/null; rm -f '$pdf_tmp'; echo '\nĐã dừng theo dõi.'" EXIT INT TERM
 
-    echo "Supervising $file (Press Ctrl+C to stop)..."
-    watchexec -w "$file" -- pandoc "$file" -o "$pdf_out" --pdf-engine=xelatex -V geometry:"top=3cm, bottom=3cm, left=3cm, right=3cm" -V mainfont="Arial"
+    echo "Supervising $name (Press Ctrl+C to stop)..."
+    watchexec -w "$dir" -f "$name" -- fish -c "
+        echo '['(date +%H:%M:%S)'] Updating PDF...'
+        if pandoc '$file' -o '$pdf_tmp' --pdf-engine=xelatex -V geometry:'top=3cm, bottom=3cm, left=3cm, right=3cm' -V mainfont='Arial'
+            mv '$pdf_tmp' '$pdf_out'
+            echo '['(date +%H:%M:%S)'] Completed!'
+        else
+            echo '['(date +%H:%M:%S)'] Error!'
+        end
+    "
 end
