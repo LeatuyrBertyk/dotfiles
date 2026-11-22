@@ -1,6 +1,9 @@
 {
   "agent_servers": {
     "antigravity-acp": {
+      "default_config_options": {
+        "mode": "default"
+      },
       "type": "registry"
     }
   },
@@ -123,7 +126,7 @@
     }
   },
   "auto_update": false,
-  "extend_comment_on_newline": false,
+  "extend_comment_on_newline": true,
   "horizontal_scroll_margin": 1,
   "vertical_scroll_margin": 1,
   "when_closing_with_no_tabs": "keep_window_open",
