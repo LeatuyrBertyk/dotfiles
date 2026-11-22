@@ -2,7 +2,7 @@ function md --description "Build and live preview Markdown"
     set -l file (realpath "$argv[1]")
 
     if test -z "$argv[1]"; or not test -f "$file"
-        echo "Command: mdpreview <file.md>"
+        echo "Command: md <file.md>"
         return 1
     end
 
@@ -17,7 +17,7 @@ function md --description "Build and live preview Markdown"
     evince "$pdf_out" >/dev/null 2>&1 &
     set -l viewer_pid $last_pid
 
-    trap "kill $viewer_pid 2>/dev/null; rm -f '$pdf_tmp'; echo '\nĐã dừng theo dõi.'" EXIT INT TERM
+    trap "kill $viewer_pid 2>/dev/null; rm -f '$pdf_tmp'; echo '\nStop supervising.'" EXIT INT TERM
 
     echo "Supervising $name (Press Ctrl+C to stop)..."
     watchexec -w "$dir" -f "$name" -- fish -c "
