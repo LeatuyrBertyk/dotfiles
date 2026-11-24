@@ -2,19 +2,19 @@
   "agent_servers": {
     "antigravity-acp": {
       "default_config_options": {
-        "mode": "default"
+        "mode": "default",
       },
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "agent": {
     "default_model": {
       "provider": "google",
       "model": "gemini-2.5-flash",
-      "enable_thinking": true
+      "enable_thinking": true,
     },
     "default_profile": "write",
-    "always_allow_tool_actions": true
+    "always_allow_tool_actions": true,
   },
   "cli_default_open_behavior": "existing_window",
   "icon_theme": "Symbols Icon Theme",
@@ -30,33 +30,33 @@
       "panel.focused_border": "#4E466E",
       "players": [
         {
-          "cursor": "#BD9DFF"
-        }
+          "cursor": "#BD9DFF",
+        },
       ],
       "syntax": {
         "comment": {
-          "font_style": "italic"
+          "font_style": "italic",
         },
         "comment.doc": {
-          "font_style": "italic"
-        }
-      }
-    }
+          "font_style": "italic",
+        },
+      },
+    },
   },
   "title_bar": {
     "show_onboarding_banner": true,
     "show_project_items": true,
     "show_branch_name": true,
-    "show_user_menu": true
+    "show_user_menu": true,
   },
   "tab_bar": {
-    "show": true
+    "show": true,
   },
   "toolbar": {
-    "quick_actions": true
+    "quick_actions": true,
   },
   "status_bar": {
-    "experimental.show": true
+    "experimental.show": true,
   },
   "project_panel": {
     "dock": "left",
@@ -67,31 +67,31 @@
     "git_status": true,
     "sticky_scroll": false,
     "scrollbar": {
-      "show": "never"
+      "show": "never",
     },
     "indent_guides": {
-      "show": "never"
-    }
+      "show": "never",
+    },
   },
   "outline_panel": {
     "default_width": 300,
     "indent_guides": {
-      "show": "never"
-    }
+      "show": "never",
+    },
   },
   "file_finder": {
-    "modal_max_width": "large"
+    "modal_max_width": "large",
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "gutter": {
     "min_line_number_digits": 0,
     "folds": false,
-    "runnables": false
+    "runnables": false,
   },
   "indent_guides": {
-    "enabled": false
+    "enabled": false,
   },
   "ui_font_family": "Hack Nerd Font",
   "ui_font_size": 17,
@@ -106,7 +106,7 @@
   "cursor_blink": false,
   "selection_highlight": false,
   "drag_and_drop_selection": {
-    "enabled": false
+    "enabled": false,
   },
   "seed_search_query_from_cursor": "never",
   "current_line_highlight": "none",
@@ -119,11 +119,11 @@
   "inline_code_actions": false,
   "lsp_document_colors": "none",
   "hover_popover_enabled": false,
-  "format_on_save": "on",
+  "format_on_save": "off",
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000
-    }
+      "milliseconds": 1000,
+    },
   },
   "auto_update": false,
   "extend_comment_on_newline": true,
@@ -134,16 +134,16 @@
   "restore_on_file_reopen": false,
   "restore_on_startup": "empty_tab",
   "session": {
-    "restore_unsaved_buffers": false
+    "restore_unsaved_buffers": false,
   },
   "git": {
     "git_gutter": "hide",
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "centered_layout": {
     "right_padding": 0.15,
-    "left_padding": 0.15
-  }
+    "left_padding": 0.15,
+  },
 }
