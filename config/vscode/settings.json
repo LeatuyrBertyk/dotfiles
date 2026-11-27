@@ -15,7 +15,7 @@
   "editor.formatOnSave": true,
   "editor.codeActionOnSave": {},
   "files.autoSave": "onFocusChange",
-  "editor.fontFamily": "HackNerdFont",
+  "editor.fontFamily": "'HackNerdFont', 'HackNerdFont', monospace",
   "editor.fontSize": 14,
   "terminal.integrated.fontFamily": "PlemolJP Console NF",
   "terminal.integrated.fontSize": 14,
@@ -60,5 +60,8 @@
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Pace Dark",
   "chat.viewSessions.orientation": "stacked",
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "top",
+  "codesnap.realLineNumbers": true,
+  "codesnap.showWindowTitle": true,
+  "editor.fontVariations": false
 }
